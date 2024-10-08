@@ -1,4 +1,4 @@
-const calculateAverage = require("./calculateAverage");
+const calculateAverage = require("../calculateAverage");
 
 /**
  * Compare les entreprises sur le ratio PEG
@@ -10,7 +10,7 @@ function comparePEG(competitorsData) {
 
     // Calcul du PEG moyen des concurrents
     const avgPeg = calculateAverage(competitorsData, 'PegRatio');
-    
+
     // Si avgPeg est NaN, on ne peut pas continuer la comparaison
     if (isNaN(avgPeg)) {
         console.log("Impossible de calculer le PEG moyen : aucune donnée valide.");

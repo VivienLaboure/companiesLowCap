@@ -1,4 +1,4 @@
-const calculateAverage = require("./calculateAverage");
+const calculateAverage = require("../calculateAverage");
 
 /**
  * Compare les entreprises sur la croissance de revenus
