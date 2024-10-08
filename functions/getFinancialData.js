@@ -7,7 +7,7 @@ const yahooFinance = require('yahoo-finance2').default;
  */
 async function getFinancialData(symbol) {
     try {
-        const data = await yahooFinance.quoteSummary(symbol, { modules: ['summaryDetail', 'financialData', 'defaultKeyStatistics', 'calendarEvents', 'assetProfile', 'cashflowStatementHistory'] });
+        const data = await yahooFinance.quoteSummary(symbol, { modules: ['summaryDetail', 'financialData', 'defaultKeyStatistics', 'calendarEvents', 'assetProfile', 'cashflowStatementHistory', 'recommendationTrend', 'earnings'] });
 
         const initialInvestment = 1000; // Montant fixe de l'investissement initial
 
@@ -30,7 +30,9 @@ async function getFinancialData(symbol) {
             RevenueGrowth: data.financialData.revenueGrowth,
             TargetMeanPrice: data.financialData.targetMeanPrice,
             DebtToEquity: data.financialData.debtToEquity,
-            Roi: roi
+            Roi: roi,
+            earnings: data.earnings,
+            recommendationTrend: data.recommendationTrend
         }
 
         if (data && data.cashflowStatementHistory) {

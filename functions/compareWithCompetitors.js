@@ -41,15 +41,6 @@ async function compareWithCompetitors(competitors) {
     const fcYieldComparaison = compareFCFYield(competitorsData);
     const psComparaison = comparePS(competitorsData);
 
-    console.log(`\nPourcentage de sous-évaluation sur le P/E ratio :`, peComparaison);
-    console.log(`Pourcentage de sous-évaluation sur le EV/EBITDA ratio :`, evEbitdaComparaison);
-    console.log(`Pourcentage de sous-évaluation sur le PEG ratio :`, pegComparaison);
-    console.log(`Pourcentage de sous-évaluation sur le ratio de la croissance de revenus  :`, revenueGrowthComparaison);
-    console.log(`Pourcentage de sous-évaluation sur le ratio d'endettement :`, debtToEquityComparaison);
-    console.log(`Pourcentage de sous-évaluation sur le ratio de retour sur investissement :`, roiComparaison);
-    console.log(`Pourcentage de sous-évaluation sur le ratio de combien une entreprise génère de flux de trésorerie libre par rapport à sa valeur marchande :`, fcYieldComparaison);
-    console.log(`Pourcentage de sous-évaluation sur le ratio de la valorisation de l'entreprise à son chiffre d'affaires :`, psComparaison);
-
     // Trouver l'entreprise la plus sous-évaluée
     const mostUndervaluedPe = Object.keys(peComparaison).reduce((a, b) => peComparaison[a] > peComparaison[b] ? a : b);
     const mostUndervaluedEvEbitda = Object.keys(evEbitdaComparaison).reduce((a, b) => evEbitdaComparaison[a] > evEbitdaComparaison[b] ? a : b);
@@ -68,6 +59,23 @@ async function compareWithCompetitors(competitors) {
     console.log(`L'entreprise la plus sous-évaluée sur le ratio de retour sur investissement est : ${mostUndervaluedRoi}`);
     console.log(`L'entreprise la plus sous-évaluée sur le ratio de combien une entreprise génère de flux de trésorerie libre par rapport à sa valeur marchande est : ${mostUndervaluedFcYield}`);
     console.log(`L'entreprise la plus sous-évaluée sur le ratio de la valorisation de l'entreprise à son chiffre d'affaires est : ${mostUndervaluedPs}`);
+    
+    for(const competitor of competitorsData) {
+        let actualSymbol = competitor.Symbol;
+        let score = 
+        (peComparaison[actualSymbol] * 0.25) + 
+        (evEbitdaComparaison[actualSymbol] * 0.25) + 
+        (pegComparaison[actualSymbol] * 0.25) + 
+        (revenueGrowthComparaison[actualSymbol] * 0.25) +
+        (debtToEquityComparaison[actualSymbol] * 0.25) +
+        (roiComparaison[actualSymbol] * 0.25) +
+        (fcYieldComparaison[actualSymbol] * 0.25) +
+        (psComparaison[actualSymbol] * 0.25);
+
+        console.log(`\nscore de ${actualSymbol} : `, score);
+        console.log(`avis des analystes: `)
+        console.log(competitor.recommendationTrend.trend);
+    }
 }
 
 module.exports = compareWithCompetitors;
