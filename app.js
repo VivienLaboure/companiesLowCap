@@ -2,6 +2,8 @@ const compareEV_EBITDA = require('./functions/compareEV_EBITDA');
 const comparePE = require('./functions/ComparePE');
 const comparePEG = require('./functions/comparePEG');
 const compareRevenueGrowth = require('./functions/compareRevenueGrowth');
+const compareDebtToEquity = require('./functions/compareDebtToEquity');
+const compareROI = require('./functions/compareROI');
 const yahooFinance = require('yahoo-finance2').default;
 
 /**
@@ -16,6 +18,9 @@ async function getFinancialData(symbol) {
         const marketCap = data.summaryDetail.marketCap;
         const totalDebt = data.financialData.totalDebt;
         const cash = data.financialData.totalCash;
+        const initialInvestment = 1000; // Montant fixe de l'investissement initial
+        const roi = ((marketCap - initialInvestment) / initialInvestment) * 100;
+
 
         let dataCompany = {
             Symbol: symbol,
@@ -26,7 +31,8 @@ async function getFinancialData(symbol) {
             Ebitda: data.financialData.ebitda,
             RevenueGrowth: data.financialData.revenueGrowth,
             TargetMeanPrice: data.financialData.targetMeanPrice,
-            DebtToEquity: data.financialData.debtToEquity
+            DebtToEquity: data.financialData.debtToEquity,
+            Roi: roi
         }
 
         if (data && data.cashflowStatementHistory) {
@@ -88,24 +94,32 @@ async function compareWithCompetitors(competitors) {
     const peComparaison = comparePE(competitorsData);
     const evEbitdaComparaison = compareEV_EBITDA(competitorsData);
     const pegComparaison = comparePEG(competitorsData);
-    const revenueGrowth = compareRevenueGrowth(competitorsData);
+    const revenueGrowthComparaison = compareRevenueGrowth(competitorsData);
+    const debtToEquityComparaison = compareDebtToEquity(competitorsData);
+    const roiComparaison = compareROI(competitorsData);
 
     console.log(`\nPourcentage de sous-évaluation sur le P/E ratio :`, peComparaison);
     console.log(`Pourcentage de sous-évaluation sur le EV/EBITDA ratio :`, evEbitdaComparaison);
     console.log(`Pourcentage de sous-évaluation sur le PEG ratio :`, pegComparaison);
-    console.log(`Pourcentage de sous-évaluation sur la croissance de revenus ratio :`, revenueGrowth);
+    console.log(`Pourcentage de sous-évaluation sur le ratio de la croissance de revenus  :`, revenueGrowthComparaison);
+    console.log(`Pourcentage de sous-évaluation sur le ratio d'endettement :`, debtToEquityComparaison);
+    console.log(`Pourcentage de sous-évaluation sur le ratio de retour sur investissement :`, roiComparaison);
 
     // Trouver l'entreprise la plus sous-évaluée
     const mostUndervaluedPe = Object.keys(peComparaison).reduce((a, b) => peComparaison[a] > peComparaison[b] ? a : b);
     const mostUndervaluedEvEbitda = Object.keys(evEbitdaComparaison).reduce((a, b) => evEbitdaComparaison[a] > evEbitdaComparaison[b] ? a : b);
     const mostUndervaluedPeg = Object.keys(pegComparaison).reduce((a, b) => pegComparaison[a] > pegComparaison[b] ? a : b);
-    const mostUndervaluedRevenueGrowth = Object.keys(revenueGrowth).reduce((a, b) => revenueGrowth[a] > revenueGrowth[b] ? a : b);
+    const mostUndervaluedRevenueGrowth = Object.keys(revenueGrowthComparaison).reduce((a, b) => revenueGrowthComparaison[a] > revenueGrowthComparaison[b] ? a : b);
+    const mostUndervaluedDebtToEquity = Object.keys(debtToEquityComparaison).reduce((a, b) => debtToEquityComparaison[a] > debtToEquityComparaison[b] ? a : b);
+    const mostUndervaluedRoi = Object.keys(roiComparaison).reduce((a, b) => roiComparaison[a] > roiComparaison[b] ? a : b);
 
     console.log(`\nL'entreprise la plus sous-évaluée sur le P/E ratio est : ${mostUndervaluedPe}`);
     console.log(`L'entreprise la plus sous-évaluée sur le EV/EBITDA ratio est : ${mostUndervaluedEvEbitda}`);
     console.log(`L'entreprise la plus sous-évaluée sur le PEG ratio est : ${mostUndervaluedPeg}`);
     console.log(`L'entreprise la plus sous-évaluée sur la croissance de revenus est : ${mostUndervaluedRevenueGrowth}`);
+    console.log(`L'entreprise la plus sous-évaluée sur le ratio d'endettement est : ${mostUndervaluedDebtToEquity}`);
+    console.log(`L'entreprise la plus sous-évaluée sur le ratio de retour sur investissement est : ${mostUndervaluedRoi}`);
 }
 
 // Comparer les entreprises concurrentes
-compareWithCompetitors(['MSFT', 'GOOGL', 'AMZN']);
+compareWithCompetitors(['MSFT', 'GOOGL', 'AAPL']);

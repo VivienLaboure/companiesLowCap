@@ -1,23 +1,4 @@
-// Fonction pour calculer le PEG moyen
-function calculateAveragePeg(companiesData) {
-    // Filtrer les entreprises qui ont un pegRatio valide (non nul et numérique)
-    const validPegCompanies = companiesData.filter(company => {
-        console.log(`Entreprise : ${company.Symbol}, PEG Ratio : ${company.PegRatio}, Type : ${typeof company.PegRatio}`);
-        return company.PegRatio != null && !isNaN(company.PegRatio);
-    });
-
-    // Si aucune entreprise n'a de PEG ratio valide, retourner NaN
-    if (validPegCompanies.length === 0) {
-        console.log("Aucune entreprise avec un PEG Ratio valide.");
-        return NaN;
-    }
-
-    // Calculer la somme des PEG ratios valides
-    const totalPeg = validPegCompanies.reduce((sum, company) => sum + company.PegRatio, 0);
-
-    // Retourner la moyenne
-    return totalPeg / validPegCompanies.length;
-}
+const calculateAverage = require("./calculateAverage");
 
 /**
  * Compare les entreprises sur le ratio PEG
@@ -28,7 +9,7 @@ function comparePEG(competitorsData) {
     let sousEvaluationPeg = {};
 
     // Calcul du PEG moyen des concurrents
-    const avgPeg = calculateAveragePeg(competitorsData);
+    const avgPeg = calculateAverage(competitorsData, 'PegRatio');
     
     // Si avgPeg est NaN, on ne peut pas continuer la comparaison
     if (isNaN(avgPeg)) {
