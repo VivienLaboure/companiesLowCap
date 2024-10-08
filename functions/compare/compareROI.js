@@ -1,5 +1,10 @@
 const calculateAverage = require("../calculateAverage");
 
+/**
+ * Compare le retour sur investissement.
+ * @param {Array} companiesData - Données des entreprises.
+ * @returns {number} La moyenne des valeurs valides pour cette propriété.
+ */
 function compareROI(competitorsData) {
     let sousEvaluationROI = {};
     const avgROI = calculateAverage(competitorsData, 'Roi');

@@ -1,3 +1,13 @@
+const compareDebtToEquity = require("./compare/compareDebtToEquity");
+const compareEV_EBITDA = require("./compare/compareEV_EBITDA");
+const compareFCFYield = require("./compare/compareFCYIELD");
+const comparePE = require("./compare/comparePE");
+const comparePEG = require("./compare/comparePEG");
+const comparePS = require("./compare/comparePS");
+const compareRevenueGrowth = require("./compare/compareRevenueGrowth");
+const compareROI = require("./compare/compareROI");
+const getFinancialData = require("./getFinancialData");
+
 /**
  * Fonction pour comparer les ratios financiers des concurrents.
  * @param {string[]} competitors - Liste des symboles boursiers des concurrents.
@@ -28,6 +38,8 @@ async function compareWithCompetitors(competitors) {
     const revenueGrowthComparaison = compareRevenueGrowth(competitorsData);
     const debtToEquityComparaison = compareDebtToEquity(competitorsData);
     const roiComparaison = compareROI(competitorsData);
+    const fcYieldComparaison = compareFCFYield(competitorsData);
+    const psComparaison = comparePS(competitorsData);
 
     console.log(`\nPourcentage de sous-évaluation sur le P/E ratio :`, peComparaison);
     console.log(`Pourcentage de sous-évaluation sur le EV/EBITDA ratio :`, evEbitdaComparaison);
@@ -35,6 +47,8 @@ async function compareWithCompetitors(competitors) {
     console.log(`Pourcentage de sous-évaluation sur le ratio de la croissance de revenus  :`, revenueGrowthComparaison);
     console.log(`Pourcentage de sous-évaluation sur le ratio d'endettement :`, debtToEquityComparaison);
     console.log(`Pourcentage de sous-évaluation sur le ratio de retour sur investissement :`, roiComparaison);
+    console.log(`Pourcentage de sous-évaluation sur le ratio de combien une entreprise génère de flux de trésorerie libre par rapport à sa valeur marchande :`, fcYieldComparaison);
+    console.log(`Pourcentage de sous-évaluation sur le ratio de la valorisation de l'entreprise à son chiffre d'affaires :`, psComparaison);
 
     // Trouver l'entreprise la plus sous-évaluée
     const mostUndervaluedPe = Object.keys(peComparaison).reduce((a, b) => peComparaison[a] > peComparaison[b] ? a : b);
@@ -43,6 +57,8 @@ async function compareWithCompetitors(competitors) {
     const mostUndervaluedRevenueGrowth = Object.keys(revenueGrowthComparaison).reduce((a, b) => revenueGrowthComparaison[a] > revenueGrowthComparaison[b] ? a : b);
     const mostUndervaluedDebtToEquity = Object.keys(debtToEquityComparaison).reduce((a, b) => debtToEquityComparaison[a] > debtToEquityComparaison[b] ? a : b);
     const mostUndervaluedRoi = Object.keys(roiComparaison).reduce((a, b) => roiComparaison[a] > roiComparaison[b] ? a : b);
+    const mostUndervaluedFcYield = Object.keys(fcYieldComparaison).reduce((a, b) => fcYieldComparaison[a] > fcYieldComparaison[b] ? a : b);
+    const mostUndervaluedPs = Object.keys(psComparaison).reduce((a, b) => psComparaison[a] > psComparaison[b] ? a : b);
 
     console.log(`\nL'entreprise la plus sous-évaluée sur le P/E ratio est : ${mostUndervaluedPe}`);
     console.log(`L'entreprise la plus sous-évaluée sur le EV/EBITDA ratio est : ${mostUndervaluedEvEbitda}`);
@@ -50,4 +66,8 @@ async function compareWithCompetitors(competitors) {
     console.log(`L'entreprise la plus sous-évaluée sur la croissance de revenus est : ${mostUndervaluedRevenueGrowth}`);
     console.log(`L'entreprise la plus sous-évaluée sur le ratio d'endettement est : ${mostUndervaluedDebtToEquity}`);
     console.log(`L'entreprise la plus sous-évaluée sur le ratio de retour sur investissement est : ${mostUndervaluedRoi}`);
+    console.log(`L'entreprise la plus sous-évaluée sur le ratio de combien une entreprise génère de flux de trésorerie libre par rapport à sa valeur marchande est : ${mostUndervaluedFcYield}`);
+    console.log(`L'entreprise la plus sous-évaluée sur le ratio de la valorisation de l'entreprise à son chiffre d'affaires est : ${mostUndervaluedPs}`);
 }
+
+module.exports = compareWithCompetitors;
