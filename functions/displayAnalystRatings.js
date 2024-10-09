@@ -1,7 +1,7 @@
 // Fonction pour afficher le format compréhensible
 function displayAnalystRatings(ratings) {
   ratings.forEach(rating => {
-    console.log(
+    return (
       `Période: ${rating.period} | ` +
       `Strong Buy: ${rating.strongBuy} | ` +
       `Buy: ${rating.buy} | ` +

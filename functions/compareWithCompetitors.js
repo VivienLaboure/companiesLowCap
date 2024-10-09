@@ -24,7 +24,8 @@ async function compareWithCompetitors(competitors) {
         }
     }
 
-    console.log('\n--- Comparaison des entreprises ---\n');
+    let message = `🔍 **Résultats de la comparaison pour :** ${competitors.join(', ')}\n\n`;
+
 
     // Calcul des moyennes des concurrents
     let totalPe = 0, totalEvEbitda = 0;
@@ -52,14 +53,14 @@ async function compareWithCompetitors(competitors) {
     const mostUndervaluedFcYield = Object.keys(fcYieldComparaison).reduce((a, b) => fcYieldComparaison[a] > fcYieldComparaison[b] ? a : b);
     const mostUndervaluedPs = Object.keys(psComparaison).reduce((a, b) => psComparaison[a] > psComparaison[b] ? a : b);
 
-    console.log(`\nSous-évaluée sur le P/E ratio est : ${mostUndervaluedPe}`);
-    console.log(`Sous-évaluée sur le EV/EBITDA ratio est : ${mostUndervaluedEvEbitda}`);
-    console.log(`Sous-évaluée sur le PEG ratio est : ${mostUndervaluedPeg}`);
-    console.log(`Sous-évaluée sur la croissance de revenus est : ${mostUndervaluedRevenueGrowth}`);
-    console.log(`Sous-évaluée sur le ratio d'endettement est : ${mostUndervaluedDebtToEquity}`);
-    console.log(`Sous-évaluée sur le ratio de retour sur investissement est : ${mostUndervaluedRoi}`);
-    console.log(`Sous-évaluée sur le ratio de combien une entreprise génère de flux de trésorerie libre par rapport à sa valeur marchande est : ${mostUndervaluedFcYield}`);
-    console.log(`Sous-évaluée sur le ratio de la valorisation de l'entreprise à son chiffre d'affaires est : ${mostUndervaluedPs}`);
+    message += `**P/E ratio :** ${mostUndervaluedPe}\n`
+    message += `**EV/EBITDA :** ${mostUndervaluedEvEbitda}\n`;
+    message += `**PEG est :** ${mostUndervaluedPeg}\n`;
+    message += `**Croissance de revenus est :** ${mostUndervaluedRevenueGrowth}\n`;
+    message += `**Ratio d'endettement est :** ${mostUndervaluedDebtToEquity}\n`;
+    message += `**ROI :** ${mostUndervaluedRoi}\n`;
+    message += `**Combien l'entreprise génère de flux de trésorerie libre par rapport à sa valeur marchande est :** ${mostUndervaluedFcYield}\n`;
+    message += `**Valorisation de l'entreprise à son chiffre d'affaires est :** ${mostUndervaluedPs}\n\n`;
 
     for (const competitor of competitorsData) {
         let actualSymbol = competitor.Symbol;
@@ -73,9 +74,22 @@ async function compareWithCompetitors(competitors) {
             (fcYieldComparaison[actualSymbol] * 0.25) +
             (psComparaison[actualSymbol] * 0.25);
 
-        console.log(`\nscore de ${actualSymbol} : `, score);
-        displayAnalystRatings(competitor.recommendationTrend.trend);
+        message += `**score de ${actualSymbol} :** ${score} \n`;
+
+        const ratings = competitor.recommendationTrend.trend;
+        ratings.forEach(rating => {
+            const trends =
+                `Période: ${rating.period} | ` +
+                `Strong Buy: ${rating.strongBuy} | ` +
+                `Buy: ${rating.buy} | ` +
+                `Hold: ${rating.hold} | ` +
+                `Sell: ${rating.sell} | ` +
+                `Strong Sell: ${rating.strongSell}`
+            message += `**Avis des analystes ${actualSymbol} :** ${trends} \n`
+        });
     }
+
+    return message;
 }
 
 module.exports = compareWithCompetitors;
