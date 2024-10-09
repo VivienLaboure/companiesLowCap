@@ -7,6 +7,7 @@ const comparePS = require("./compare/comparePS");
 const compareRevenueGrowth = require("./compare/compareRevenueGrowth");
 const compareROI = require("./compare/compareROI");
 const getFinancialData = require("./getFinancialData");
+const displayAnalystRatings = require("./displayAnalystRatings");
 
 /**
  * Fonction pour comparer les ratios financiers des concurrents.
@@ -51,30 +52,29 @@ async function compareWithCompetitors(competitors) {
     const mostUndervaluedFcYield = Object.keys(fcYieldComparaison).reduce((a, b) => fcYieldComparaison[a] > fcYieldComparaison[b] ? a : b);
     const mostUndervaluedPs = Object.keys(psComparaison).reduce((a, b) => psComparaison[a] > psComparaison[b] ? a : b);
 
-    console.log(`\nL'entreprise la plus sous-évaluée sur le P/E ratio est : ${mostUndervaluedPe}`);
-    console.log(`L'entreprise la plus sous-évaluée sur le EV/EBITDA ratio est : ${mostUndervaluedEvEbitda}`);
-    console.log(`L'entreprise la plus sous-évaluée sur le PEG ratio est : ${mostUndervaluedPeg}`);
-    console.log(`L'entreprise la plus sous-évaluée sur la croissance de revenus est : ${mostUndervaluedRevenueGrowth}`);
-    console.log(`L'entreprise la plus sous-évaluée sur le ratio d'endettement est : ${mostUndervaluedDebtToEquity}`);
-    console.log(`L'entreprise la plus sous-évaluée sur le ratio de retour sur investissement est : ${mostUndervaluedRoi}`);
-    console.log(`L'entreprise la plus sous-évaluée sur le ratio de combien une entreprise génère de flux de trésorerie libre par rapport à sa valeur marchande est : ${mostUndervaluedFcYield}`);
-    console.log(`L'entreprise la plus sous-évaluée sur le ratio de la valorisation de l'entreprise à son chiffre d'affaires est : ${mostUndervaluedPs}`);
-    
-    for(const competitor of competitorsData) {
+    console.log(`\nSous-évaluée sur le P/E ratio est : ${mostUndervaluedPe}`);
+    console.log(`Sous-évaluée sur le EV/EBITDA ratio est : ${mostUndervaluedEvEbitda}`);
+    console.log(`Sous-évaluée sur le PEG ratio est : ${mostUndervaluedPeg}`);
+    console.log(`Sous-évaluée sur la croissance de revenus est : ${mostUndervaluedRevenueGrowth}`);
+    console.log(`Sous-évaluée sur le ratio d'endettement est : ${mostUndervaluedDebtToEquity}`);
+    console.log(`Sous-évaluée sur le ratio de retour sur investissement est : ${mostUndervaluedRoi}`);
+    console.log(`Sous-évaluée sur le ratio de combien une entreprise génère de flux de trésorerie libre par rapport à sa valeur marchande est : ${mostUndervaluedFcYield}`);
+    console.log(`Sous-évaluée sur le ratio de la valorisation de l'entreprise à son chiffre d'affaires est : ${mostUndervaluedPs}`);
+
+    for (const competitor of competitorsData) {
         let actualSymbol = competitor.Symbol;
-        let score = 
-        (peComparaison[actualSymbol] * 0.25) + 
-        (evEbitdaComparaison[actualSymbol] * 0.25) + 
-        (pegComparaison[actualSymbol] * 0.25) + 
-        (revenueGrowthComparaison[actualSymbol] * 0.25) +
-        (debtToEquityComparaison[actualSymbol] * 0.25) +
-        (roiComparaison[actualSymbol] * 0.25) +
-        (fcYieldComparaison[actualSymbol] * 0.25) +
-        (psComparaison[actualSymbol] * 0.25);
+        let score =
+            (peComparaison[actualSymbol] * 0.25) +
+            (evEbitdaComparaison[actualSymbol] * 0.25) +
+            (pegComparaison[actualSymbol] * 0.25) +
+            (revenueGrowthComparaison[actualSymbol] * 0.25) +
+            (debtToEquityComparaison[actualSymbol] * 0.25) +
+            (roiComparaison[actualSymbol] * 0.25) +
+            (fcYieldComparaison[actualSymbol] * 0.25) +
+            (psComparaison[actualSymbol] * 0.25);
 
         console.log(`\nscore de ${actualSymbol} : `, score);
-        console.log(`avis des analystes: `)
-        console.log(competitor.recommendationTrend.trend);
+        displayAnalystRatings(competitor.recommendationTrend.trend);
     }
 }
 
