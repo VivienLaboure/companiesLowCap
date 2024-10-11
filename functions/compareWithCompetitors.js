@@ -8,12 +8,13 @@ const compareRevenueGrowth = require("./compare/compareRevenueGrowth");
 const compareROI = require("./compare/compareROI");
 const getFinancialData = require("./getFinancialData");
 const displayAnalystRatings = require("./displayAnalystRatings");
+const { EmbedBuilder } = require('discord.js');
 
 /**
  * Fonction pour comparer les ratios financiers des concurrents.
  * @param {string[]} competitors - Liste des symboles boursiers des concurrents.
  */
-async function compareWithCompetitors(competitors) {
+async function compareWithCompetitors(competitors, message) {
     let competitorsData = [];
     for (const competitor of competitors) {
         const competitorData = await getFinancialData(competitor);
@@ -23,9 +24,6 @@ async function compareWithCompetitors(competitors) {
             console.log("Dividendes inconnues pour ", competitor);
         }
     }
-
-    let message = `🔍 **Résultats de la comparaison pour :** ${competitors.join(', ')}\n\n`;
-
 
     // Calcul des moyennes des concurrents
     let totalPe = 0, totalEvEbitda = 0;
@@ -53,17 +51,17 @@ async function compareWithCompetitors(competitors) {
     const mostUndervaluedFcYield = Object.keys(fcYieldComparaison).reduce((a, b) => fcYieldComparaison[a] > fcYieldComparaison[b] ? a : b);
     const mostUndervaluedPs = Object.keys(psComparaison).reduce((a, b) => psComparaison[a] > psComparaison[b] ? a : b);
 
-    message += `**P/E ratio :** ${mostUndervaluedPe}\n`
-    message += `**EV/EBITDA :** ${mostUndervaluedEvEbitda}\n`;
-    message += `**PEG est :** ${mostUndervaluedPeg}\n`;
-    message += `**Croissance de revenus est :** ${mostUndervaluedRevenueGrowth}\n`;
-    message += `**Ratio d'endettement est :** ${mostUndervaluedDebtToEquity}\n`;
-    message += `**ROI :** ${mostUndervaluedRoi}\n`;
-    message += `**Combien l'entreprise génère de flux de trésorerie libre par rapport à sa valeur marchande est :** ${mostUndervaluedFcYield}\n`;
-    message += `**Valorisation de l'entreprise à son chiffre d'affaires est :** ${mostUndervaluedPs}\n\n`;
 
+    const embeds = [];
+    let currentEmbed = new EmbedBuilder()
+        .setColor('#0099ff')
+        .setTitle('🔍 Comparaison demandée pour :')
+        .setDescription(`${competitors.join(', ')}`)
+        .setTimestamp()
+        .setFooter({ text: 'Comparaison des concurrents' });
     for (const competitor of competitorsData) {
         let actualSymbol = competitor.Symbol;
+
         let score =
             (peComparaison[actualSymbol] * 0.25) +
             (evEbitdaComparaison[actualSymbol] * 0.25) +
@@ -74,22 +72,34 @@ async function compareWithCompetitors(competitors) {
             (fcYieldComparaison[actualSymbol] * 0.25) +
             (psComparaison[actualSymbol] * 0.25);
 
-        message += `**score de ${actualSymbol} :** ${score} \n`;
+        currentEmbed.addFields({ name: `Score de ${actualSymbol}`, value: `${score.toFixed(2)}`, inline: true });
 
         const ratings = competitor.recommendationTrend.trend;
-        ratings.forEach(rating => {
+        ratings.forEach((rating) => {
             const trends =
                 `Période: ${rating.period} | ` +
                 `Strong Buy: ${rating.strongBuy} | ` +
                 `Buy: ${rating.buy} | ` +
                 `Hold: ${rating.hold} | ` +
                 `Sell: ${rating.sell} | ` +
-                `Strong Sell: ${rating.strongSell}`
-            message += `**Avis des analystes ${actualSymbol} :** ${trends} \n`
+                `Strong Sell: ${rating.strongSell}`;
+
+            // Ajouter l'information
+            if (currentEmbed.length >= 6000) {
+                embeds.push(currentEmbed);  // Sauvegarde l'embed actuel
+                currentEmbed = new EmbedBuilder().setColor('#0099ff').setTimestamp().setFooter({ text: 'Comparaison des concurrents' });
+            }
+            currentEmbed.addFields({ name: `Avis des analystes ${actualSymbol}`, value: trends });
         });
     }
 
-    return message;
+    // Ajouter l'embed final
+    embeds.push(currentEmbed);
+
+    // Envoyer tous les embeds
+    for (const embed of embeds) {
+        await message.channel.send({ embeds: [embed] });
+    }
 }
 
 module.exports = compareWithCompetitors;
