@@ -7,7 +7,6 @@ const comparePS = require("./compare/comparePS");
 const compareRevenueGrowth = require("./compare/compareRevenueGrowth");
 const compareROI = require("./compare/compareROI");
 const getFinancialData = require("./getFinancialData");
-const displayAnalystRatings = require("./displayAnalystRatings");
 const { EmbedBuilder } = require('discord.js');
 
 /**
@@ -53,6 +52,26 @@ async function compareWithCompetitors(competitors, message) {
 
 
     const embeds = [];
+    let mostUndervaluedEmbed = new EmbedBuilder()
+        .setColor('#0099ff')
+        .setTitle('🔍 Comparaison demandée pour :')
+        .setDescription(`${competitors.join(', ')}`)
+        .setTimestamp()
+        .setFooter({ text: 'Les plus sous-évalués' });
+
+    mostUndervaluedEmbed.addFields(
+        { name: 'Entreprise la plus sous-évaluée (PE)', value: `${mostUndervaluedPe} avec un score de ${peComparaison[mostUndervaluedPe].toFixed(2)}`, inline: true },
+        { name: 'Entreprise la plus sous-évaluée (EV/EBITDA)', value: `${mostUndervaluedEvEbitda} avec un score de ${evEbitdaComparaison[mostUndervaluedEvEbitda].toFixed(2)}`, inline: true },
+        { name: 'Entreprise la plus sous-évaluée (PEG)', value: `${mostUndervaluedPeg} avec un score de ${pegComparaison[mostUndervaluedPeg].toFixed(2)}`, inline: true },
+        { name: 'Entreprise la plus sous-évaluée (Croissance des revenus)', value: `${mostUndervaluedRevenueGrowth} avec un score de ${revenueGrowthComparaison[mostUndervaluedRevenueGrowth].toFixed(2)}`, inline: true },
+        { name: 'Entreprise la plus sous-évaluée (Dette/Equity)', value: `${mostUndervaluedDebtToEquity} avec un score de ${debtToEquityComparaison[mostUndervaluedDebtToEquity].toFixed(2)}`, inline: true },
+        { name: 'Entreprise la plus sous-évaluée (ROI)', value: `${mostUndervaluedRoi} avec un score de ${roiComparaison[mostUndervaluedRoi].toFixed(2)}`, inline: true },
+        { name: 'Entreprise la plus sous-évaluée (FC Yield)', value: `${mostUndervaluedFcYield} avec un score de ${fcYieldComparaison[mostUndervaluedFcYield].toFixed(2)}`, inline: true },
+        { name: 'Entreprise la plus sous-évaluée (PS)', value: `${mostUndervaluedPs} avec un score de ${psComparaison[mostUndervaluedPs].toFixed(2)}`, inline: true }
+    );
+
+    embeds.push(mostUndervaluedEmbed);
+
     let currentEmbed = new EmbedBuilder()
         .setColor('#0099ff')
         .setTitle('🔍 Comparaison demandée pour :')
