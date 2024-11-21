@@ -1,7 +1,13 @@
 const compareWithCompetitors = require('./functions/compareWithCompetitors');
-const { Client, GatewayIntentBits, EmbedBuilder } = require('discord.js');
-
+const compareWithCompetitors_console = require('./functions/compareWithCompetitors_console');
 require('dotenv').config();
+
+
+const competitors = ['AAPL', 'MSFT', 'GOOGL'];
+compareWithCompetitors_console(competitors)
+
+/*const { Client, GatewayIntentBits, EmbedBuilder } = require('discord.js');
+
 
 
 const client = new Client({
@@ -26,3 +32,4 @@ client.on('messageCreate', async (message) => {
 
 // Se connecter au bot
 client.login(process.env.TOKEN_DISCORD_BOT);
+*/
