@@ -2,8 +2,8 @@ const compareWithCompetitors = require('./functions/compareWithCompetitors');
 const compareWithCompetitors_console = require('./functions/compareWithCompetitors_console');
 require('dotenv').config();
 
-
-const competitors = ['AAPL', 'MSFT', 'GOOGL'];
+//exemple de symboles de concurrents pharmaceutiques à comparer 
+const competitors = ['PFE', 'MRK', 'JNJ', 'GSK', 'AZN'];
 compareWithCompetitors_console(competitors)
 
 /*const { Client, GatewayIntentBits, EmbedBuilder } = require('discord.js');
@@ -25,7 +25,6 @@ client.once('ready', () => {
 
 client.on('messageCreate', async (message) => {
     if (message.content.startsWith('!compare')) {
-        const competitors = ['AAPL', 'MSFT', 'GOOGL']; // Exemple de symboles
         await compareWithCompetitors(competitors, message);
     }
 });

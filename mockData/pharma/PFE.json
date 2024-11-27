@@ -1,0 +1,404 @@
+{
+  "assetProfile": {
+    "address1": "66 Hudson Boulevard East",
+    "city": "New York",
+    "state": "NY",
+    "zip": "10001-2192",
+    "country": "United States",
+    "phone": "212 733 2323",
+    "website": "https://www.pfizer.com",
+    "industry": "Drug Manufacturers - General",
+    "industryKey": "drug-manufacturers-general",
+    "industryDisp": "Drug Manufacturers - General",
+    "sector": "Healthcare",
+    "sectorKey": "healthcare",
+    "sectorDisp": "Healthcare",
+    "longBusinessSummary": "Pfizer Inc. discovers, develops, manufactures, markets, distributes, and sells biopharmaceutical products in the United States, Europe, and internationally. The company offers medicines and vaccines in various therapeutic areas, including cardiovascular metabolic, migraine, and women's health under the Eliquis, Nurtec ODT/Vydura, Zavzpret, and the Premarin family brands; infectious diseases with unmet medical needs under the Prevnar family, Abrysvo, Nimenrix, FSME/IMMUN-TicoVac, and Trumenba brands; and COVID-19 prevention and treatment, and potential future mRNA and antiviral products under the Comirnaty and Paxlovid brands. It also provides medicines and vaccines in various therapeutic areas, such as biosimilars for chronic immune and inflammatory diseases under the Xeljanz, Enbrel, Inflectra, Litfulo, Velsipity, and Cibinqo brands; amyloidosis, hemophilia, endocrine diseases, and sickle cell disease under the Vyndaqel family, Oxbryta, BeneFIX, Somavert, Ngenla, and Genotropin brands; sterile injectable and anti-infective medicines under the Sulperazon, Medrol, Zavicefta, Zithromax, and Panzyga brands; and biologics, small molecules, immunotherapies, and biosimilars under the Ibrance, Xtandi, Inlyta, Bosulif, Mektovi, Padcev, Adcetris, Talzenna, Tukysa, Elrexfio, Tivdak, Lorbrena, and Braftovi brands. In addition, the company involved in the contract manufacturing business. It serves wholesalers, retailers, hospitals, clinics, government agencies, pharmacies, individual provider offices, retail pharmacies, and integrated delivery systems. The company has collaboration agreements with Bristol-Myers Squibb Company; Astellas Pharma US, Inc.; Merck KGaA; and BioNTech SE, as well as has strategic clinical collaboration with Acepodia Inc. for the development of antibody-cell conjugation-based cell therapies in autoimmune diseases. Pfizer Inc. was founded in 1849 and is headquartered in New York, New York.",
+    "fullTimeEmployees": 88000,
+    "companyOfficers": [
+      {
+        "maxAge": 1,
+        "name": "Mr. David M. Denton",
+        "age": 58,
+        "title": "Chief Financial Officer & Executive VP",
+        "yearBorn": 1965,
+        "fiscalYear": 2023,
+        "totalPay": 1748039,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Dr. Mikael  Dolsten M.D., Ph.D.",
+        "age": 65,
+        "title": "Chief Scientific Officer and President of Research & Development",
+        "yearBorn": 1958,
+        "fiscalYear": 2023,
+        "totalPay": 2408897,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Ms. Jennifer B. Damico",
+        "age": 55,
+        "title": "Senior VP, Controller & Principal Accounting Officer",
+        "yearBorn": 1968,
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Ms. Lidia L. Fonseca",
+        "age": 54,
+        "title": "Executive VP and Chief Digital & Technology Officer",
+        "yearBorn": 1969,
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Ms. Francesca M. DeMartino",
+        "title": "Chief Investor Relations Officer",
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. Rady A. Johnson",
+        "age": 61,
+        "title": "Executive VP and Chief Compliance, Quality & Risk Officer",
+        "yearBorn": 1962,
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. Andreas J. Panayiotou",
+        "title": "Global Chief Marketing Officer",
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Ms. Payal Sahni Becher",
+        "age": 48,
+        "title": "Chief People Experience Officer & Executive VP",
+        "yearBorn": 1975,
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Ms. Sally M. Susman",
+        "age": 61,
+        "title": "Executive VP & Chief Corporate Affairs Officer",
+        "yearBorn": 1962,
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Dr. Annette  Doherty Ph.D.",
+        "title": "Head of Worldwide Pharmaceutical Sciences",
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      }
+    ],
+    "auditRisk": 10,
+    "boardRisk": 8,
+    "compensationRisk": 7,
+    "shareHolderRightsRisk": 1,
+    "overallRisk": 7,
+    "governanceEpochDate": "2024-11-01T00:00:00.000Z",
+    "compensationAsOfEpochDate": "2023-12-31T00:00:00.000Z",
+    "irWebsite": "http://www.pfizer.com/investors/",
+    "maxAge": 86400
+  },
+  "recommendationTrend": {
+    "trend": [
+      {
+        "period": "0m",
+        "strongBuy": 3,
+        "buy": 8,
+        "hold": 14,
+        "sell": 1,
+        "strongSell": 0
+      },
+      {
+        "period": "-1m",
+        "strongBuy": 4,
+        "buy": 7,
+        "hold": 14,
+        "sell": 0,
+        "strongSell": 0
+      },
+      {
+        "period": "-2m",
+        "strongBuy": 4,
+        "buy": 7,
+        "hold": 13,
+        "sell": 0,
+        "strongSell": 0
+      },
+      {
+        "period": "-3m",
+        "strongBuy": 4,
+        "buy": 6,
+        "hold": 14,
+        "sell": 0,
+        "strongSell": 0
+      }
+    ],
+    "maxAge": 86400
+  },
+  "summaryDetail": {
+    "maxAge": 1,
+    "priceHint": 2,
+    "previousClose": 25.77,
+    "open": 25.76,
+    "dayLow": 25.7,
+    "dayHigh": 25.945,
+    "regularMarketPreviousClose": 25.77,
+    "regularMarketOpen": 25.76,
+    "regularMarketDayLow": 25.7,
+    "regularMarketDayHigh": 25.945,
+    "dividendRate": 1.68,
+    "dividendYield": 0.0652,
+    "exDividendDate": "2024-11-08T00:00:00.000Z",
+    "payoutRatio": 2.2267,
+    "fiveYearAvgDividendYield": 4.23,
+    "beta": 0.615,
+    "trailingPE": 34.38,
+    "forwardPE": 8.800341,
+    "volume": 16333434,
+    "regularMarketVolume": 16333434,
+    "averageVolume": 38071671,
+    "averageVolume10days": 56477100,
+    "averageDailyVolume10Day": 56477100,
+    "bid": 25.74,
+    "ask": 25.75,
+    "bidSize": 3000,
+    "askSize": 4000,
+    "marketCap": 146123341824,
+    "fiftyTwoWeekLow": 24.48,
+    "fiftyTwoWeekHigh": 31.54,
+    "priceToSalesTrailing12Months": 2.4610245,
+    "fiftyDayAverage": 28.047,
+    "twoHundredDayAverage": 28.08355,
+    "trailingAnnualDividendRate": 1.67,
+    "trailingAnnualDividendYield": 0.06480403,
+    "currency": "USD",
+    "fromCurrency": null,
+    "toCurrency": null,
+    "lastMarket": null,
+    "coinMarketCapLink": null,
+    "algorithm": null,
+    "tradeable": false
+  },
+  "cashflowStatementHistory": {
+    "cashflowStatements": [
+      {
+        "maxAge": 1,
+        "endDate": "2023-12-31T00:00:00.000Z",
+        "netIncome": 2119000000
+      },
+      {
+        "maxAge": 1,
+        "endDate": "2022-12-31T00:00:00.000Z",
+        "netIncome": 31372000000
+      },
+      {
+        "maxAge": 1,
+        "endDate": "2021-12-31T00:00:00.000Z",
+        "netIncome": 21979000000
+      },
+      {
+        "maxAge": 1,
+        "endDate": "2020-12-31T00:00:00.000Z",
+        "netIncome": 9616000000
+      }
+    ],
+    "maxAge": 86400
+  },
+  "earnings": {
+    "maxAge": 86400,
+    "earningsChart": {
+      "quarterly": [
+        {
+          "date": "4Q2023",
+          "actual": 0.1,
+          "estimate": -0.18282
+        },
+        {
+          "date": "1Q2024",
+          "actual": 0.82,
+          "estimate": 0.51363
+        },
+        {
+          "date": "2Q2024",
+          "actual": 0.6,
+          "estimate": 0.46085
+        },
+        {
+          "date": "3Q2024",
+          "actual": 1.06,
+          "estimate": 0.61172
+        }
+      ],
+      "currentQuarterEstimate": 0.47292,
+      "currentQuarterEstimateDate": "4Q",
+      "currentQuarterEstimateYear": 2024,
+      "earningsDate": [
+        "2025-01-28T13:30:00.000Z",
+        "2025-02-03T13:30:00.000Z"
+      ],
+      "isEarningsDateEstimate": true
+    },
+    "financialsChart": {
+      "yearly": [
+        {
+          "date": 2020,
+          "revenue": 41908000000,
+          "earnings": 9616000000
+        },
+        {
+          "date": 2021,
+          "revenue": 81288000000,
+          "earnings": 21979000000
+        },
+        {
+          "date": 2022,
+          "revenue": 100330000000,
+          "earnings": 31372000000
+        },
+        {
+          "date": 2023,
+          "revenue": 58496000000,
+          "earnings": 2119000000
+        }
+      ],
+      "quarterly": [
+        {
+          "date": "4Q2023",
+          "revenue": 14249000000,
+          "earnings": -3369000000
+        },
+        {
+          "date": "1Q2024",
+          "revenue": 14879000000,
+          "earnings": 3115000000
+        },
+        {
+          "date": "2Q2024",
+          "revenue": 13283000000,
+          "earnings": 41000000
+        },
+        {
+          "date": "3Q2024",
+          "revenue": 17702000000,
+          "earnings": 4465000000
+        }
+      ]
+    },
+    "financialCurrency": "USD"
+  },
+  "calendarEvents": {
+    "maxAge": 1,
+    "earnings": {
+      "earningsDate": [
+        "2025-01-28T13:30:00.000Z",
+        "2025-02-03T13:30:00.000Z"
+      ],
+      "earningsCallDate": [
+        1730210400
+      ],
+      "isEarningsDateEstimate": true,
+      "earningsAverage": 0.47292,
+      "earningsLow": 0.27,
+      "earningsHigh": 0.69,
+      "revenueAverage": 17283500420,
+      "revenueLow": 15144000000,
+      "revenueHigh": 18205000000
+    },
+    "exDividendDate": "2024-11-08T00:00:00.000Z",
+    "dividendDate": "2024-12-02T00:00:00.000Z"
+  },
+  "defaultKeyStatistics": {
+    "maxAge": 1,
+    "priceHint": 2,
+    "enterpriseValue": 204302336000,
+    "forwardPE": 8.913109,
+    "profitMargins": 0.071609996,
+    "floatShares": 5659396268,
+    "sharesOutstanding": 5666990080,
+    "sharesShort": 94541302,
+    "sharesShortPriorMonth": "1972-04-01T02:42:52.000Z",
+    "sharesShortPreviousMonthDate": "2024-10-15T00:00:00.000Z",
+    "dateShortInterest": 1731628800,
+    "sharesPercentSharesOut": 0.0167,
+    "heldPercentInsiders": 0.00048000002,
+    "heldPercentInstitutions": 0.67807,
+    "shortRatio": 2.07,
+    "shortPercentOfFloat": 0.0167,
+    "beta": 0.615,
+    "impliedSharesOutstanding": 5666990080,
+    "category": null,
+    "bookValue": 16.288,
+    "priceToBook": 1.5830673,
+    "fundFamily": null,
+    "legalType": null,
+    "lastFiscalYearEnd": "2023-12-31T00:00:00.000Z",
+    "nextFiscalYearEnd": "2024-12-31T00:00:00.000Z",
+    "mostRecentQuarter": "2024-09-29T00:00:00.000Z",
+    "netIncomeToCommon": 4273999872,
+    "trailingEps": 0.75,
+    "forwardEps": 2.93,
+    "lastSplitFactor": "1054:1000",
+    "lastSplitDate": 1605571200,
+    "enterpriseToRevenue": 3.441,
+    "enterpriseToEbitda": 11.124,
+    "52WeekChange": -0.14328456,
+    "SandP52WeekChange": 0.3232665,
+    "lastDividendValue": 0.42,
+    "lastDividendDate": "2024-11-08T00:00:00.000Z"
+  },
+  "financialData": {
+    "maxAge": 86400,
+    "currentPrice": 25.785,
+    "targetHighPrice": 45,
+    "targetLowPrice": 25,
+    "targetMeanPrice": 32.54833,
+    "targetMedianPrice": 32,
+    "recommendationMean": 2.34615,
+    "recommendationKey": "buy",
+    "numberOfAnalystOpinions": 24,
+    "totalCash": 9953000448,
+    "totalCashPerShare": 1.756,
+    "ebitda": 18365999104,
+    "totalDebt": 67945000960,
+    "quickRatio": 0.64,
+    "currentRatio": 1,
+    "totalRevenue": 59375001600,
+    "debtToEquity": 73.408,
+    "revenuePerShare": 10.493,
+    "returnOnAssets": 0.033069998,
+    "returnOnEquity": 0.04538,
+    "freeCashflow": 11420749824,
+    "operatingCashflow": 11262999552,
+    "revenueGrowth": 0.312,
+    "grossMargins": 0.69778997,
+    "ebitdaMargins": 0.30932,
+    "operatingMargins": 0.32987,
+    "profitMargins": 0.071609996,
+    "financialCurrency": "USD"
+  }
+}

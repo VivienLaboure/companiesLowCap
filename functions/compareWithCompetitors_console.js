@@ -40,14 +40,14 @@ async function compareWithCompetitors_console(competitors) {
     const psComparaison = comparePS(competitorsData);
 
     // Trouver l'entreprise la plus sous-évaluée
-    const mostUndervaluedPe = Object.keys(peComparaison).reduce((a, b) => peComparaison[a] > peComparaison[b] ? a : b);
-    const mostUndervaluedEvEbitda = Object.keys(evEbitdaComparaison).reduce((a, b) => evEbitdaComparaison[a] > evEbitdaComparaison[b] ? a : b);
-    const mostUndervaluedPeg = Object.keys(pegComparaison).reduce((a, b) => pegComparaison[a] > pegComparaison[b] ? a : b);
-    const mostUndervaluedRevenueGrowth = Object.keys(revenueGrowthComparaison).reduce((a, b) => revenueGrowthComparaison[a] > revenueGrowthComparaison[b] ? a : b);
-    const mostUndervaluedDebtToEquity = Object.keys(debtToEquityComparaison).reduce((a, b) => debtToEquityComparaison[a] > debtToEquityComparaison[b] ? a : b);
-    const mostUndervaluedRoi = Object.keys(roiComparaison).reduce((a, b) => roiComparaison[a] > roiComparaison[b] ? a : b);
-    const mostUndervaluedFcYield = Object.keys(fcYieldComparaison).reduce((a, b) => fcYieldComparaison[a] > fcYieldComparaison[b] ? a : b);
-    const mostUndervaluedPs = Object.keys(psComparaison).reduce((a, b) => psComparaison[a] > psComparaison[b] ? a : b);
+    const mostUndervaluedPe = Object.keys(peComparaison).reduce((a, b) => peComparaison[a] > peComparaison[b] ? a : b, '');
+    const mostUndervaluedEvEbitda = Object.keys(evEbitdaComparaison).reduce((a, b) => evEbitdaComparaison[a] > evEbitdaComparaison[b] ? a : b, '');
+    const mostUndervaluedPeg = Object.keys(pegComparaison).reduce((a, b) => pegComparaison[a] > pegComparaison[b] ? a : b, '');
+    const mostUndervaluedRevenueGrowth = Object.keys(revenueGrowthComparaison).reduce((a, b) => revenueGrowthComparaison[a] > revenueGrowthComparaison[b] ? a : b, '');
+    const mostUndervaluedDebtToEquity = Object.keys(debtToEquityComparaison).reduce((a, b) => debtToEquityComparaison[a] > debtToEquityComparaison[b] ? a : b, '');
+    const mostUndervaluedRoi = Object.keys(roiComparaison).reduce((a, b) => roiComparaison[a] > roiComparaison[b] ? a : b, '');
+    const mostUndervaluedFcYield = Object.keys(fcYieldComparaison).reduce((a, b) => fcYieldComparaison[a] > fcYieldComparaison[b] ? a : b, '');
+    const mostUndervaluedPs = Object.keys(psComparaison).reduce((a, b) => psComparaison[a] > psComparaison[b] ? a : b, '');
 
 
     console.log(`\nSous-évaluée sur le P/E ratio est : ${mostUndervaluedPe}`);
@@ -59,33 +59,7 @@ async function compareWithCompetitors_console(competitors) {
     console.log(`Sous-évaluée sur le ratio de combien une entreprise génère de flux de trésorerie libre par rapport à sa valeur marchande est : ${mostUndervaluedFcYield}`);
     console.log(`Sous-évaluée sur le ratio de la valorisation de l'entreprise à son chiffre d'affaires est : ${mostUndervaluedPs}`);
 
-
-
-        let score =
-            (peComparaison[actualSymbol] * 0.25) +
-            (evEbitdaComparaison[actualSymbol] * 0.25) +
-            (pegComparaison[actualSymbol] * 0.25) +
-            (revenueGrowthComparaison[actualSymbol] * 0.25) +
-            (debtToEquityComparaison[actualSymbol] * 0.25) +
-            (roiComparaison[actualSymbol] * 0.25) +
-            (fcYieldComparaison[actualSymbol] * 0.25) +
-            (psComparaison[actualSymbol] * 0.25);
-
-
-            console.log(`Score de ${actualSymbol}: ${score.toFixed(2)}`)
-
-        const ratings = competitor.recommendationTrend.trend;
-        ratings.forEach((rating) => {
-            const trends =
-                `Période: ${rating.period} | ` +
-                `Strong Buy: ${rating.strongBuy} | ` +
-                `Buy: ${rating.buy} | ` +
-                `Hold: ${rating.hold} | ` +
-                `Sell: ${rating.sell} | ` +
-                `Strong Sell: ${rating.strongSell}`;
-
-            console.log({ name: `Avis des analystes ${actualSymbol}`, value: trends });
-        });
-    }
+    
+}
 
 module.exports = compareWithCompetitors_console;

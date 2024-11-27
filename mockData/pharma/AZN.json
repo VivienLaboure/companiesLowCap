@@ -1,0 +1,391 @@
+{
+  "assetProfile": {
+    "address1": "1 Francis Crick Avenue",
+    "address2": "Cambridge Biomedical Campus",
+    "city": "Cambridge",
+    "zip": "CB2 0AA",
+    "country": "United Kingdom",
+    "phone": "44 20 3749 5000",
+    "website": "https://www.astrazeneca.com",
+    "industry": "Drug Manufacturers - General",
+    "industryKey": "drug-manufacturers-general",
+    "industryDisp": "Drug Manufacturers - General",
+    "sector": "Healthcare",
+    "sectorKey": "healthcare",
+    "sectorDisp": "Healthcare",
+    "longBusinessSummary": "AstraZeneca PLC, a biopharmaceutical company, focuses on the discovery, development, manufacture, and commercialization of prescription medicines. The company's marketed products include Tagrisso, Imfinzi, Lynparza, Calquence, Enhertu, Orpathys, Truqap, Zoladex, Faslodex, Farxiga, Brilinta, Lokelma, Roxadustat, Andexxa, Crestor, Seloken, Onglyza, Bydureon, Fasenra, Breztri, Symbicort, Saphnelo, Tezspire, Pulmicort, Bevespi, and Daliresp for cardiovascular, renal, metabolism, and oncology. Its marketed products also comprise Vaxzevria, Beyfortus, Synagis, FluMist, Soliris, Ultomiris, Strensiq, Koselugo, and Kanuma for covid-19 and rare disease. The company serves primary care and specialty care physicians through distributors and local representative offices in the United Kingdom, rest of Europe, the Americas, Asia, Africa, and Australasia. It has a collaboration agreement with Neurimmune AG to develop and commercialize NI006; BenevolentAI for drug discovery for systemic lupus erythematosus; Lunit for developing AI-Powered Digital Pathology Risk Assessment Tools for NSCLC; and Absci Corporation for AI-driven drug discovery against an oncology target. The company was formerly known as Zeneca Group PLC and changed its name to AstraZeneca PLC in April 1999. AstraZeneca PLC was incorporated in 1992 and is headquartered in Cambridge, the United Kingdom.",
+    "fullTimeEmployees": 89900,
+    "companyOfficers": [
+      {
+        "maxAge": 1,
+        "name": "Mr. Pascal  Soriot D.V.M., M.B.A.",
+        "age": 64,
+        "title": "CEO & Executive Director",
+        "yearBorn": 1959,
+        "fiscalYear": 2023,
+        "totalPay": 6051364,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Dr. Aradhana  Sarin M.D.",
+        "age": 49,
+        "title": "CFO & Executive Director",
+        "yearBorn": 1974,
+        "fiscalYear": 2023,
+        "totalPay": 3336535,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Ms. Pam P. Cheng",
+        "age": 53,
+        "title": "EVP of Global opt. & IT, Chief Sust. Officer and Member of External Sust.Adv. Board",
+        "yearBorn": 1970,
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. Andrew P. Barnett",
+        "title": "Head of Investor Relations",
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Gonzalo  Vina",
+        "title": "Head of Global Media Relations",
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Dr. Ruud  Dobber Ph.D.",
+        "title": "Executive Vice-President of BioPharmaceuticals Business Unit",
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Dr. Susan Mary Galbraith M.D., Ph.D.",
+        "age": 57,
+        "title": "Executive Vice President of Oncology Research & Development",
+        "yearBorn": 1966,
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. Leon  Wang",
+        "title": "Executive VP of International & China President",
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Ms. Iskra  Reic",
+        "title": "Executive Vice-President of Vaccines & Immune Therapies",
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. David  Fredrickson",
+        "title": "Executive Vice-President of Oncology Business Unit",
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      }
+    ],
+    "compensationAsOfEpochDate": "2023-12-31T00:00:00.000Z",
+    "maxAge": 86400
+  },
+  "recommendationTrend": {
+    "trend": [
+      {
+        "period": "0m",
+        "strongBuy": 3,
+        "buy": 6,
+        "hold": 1,
+        "sell": 0,
+        "strongSell": 0
+      },
+      {
+        "period": "-1m",
+        "strongBuy": 3,
+        "buy": 6,
+        "hold": 2,
+        "sell": 0,
+        "strongSell": 0
+      },
+      {
+        "period": "-2m",
+        "strongBuy": 3,
+        "buy": 6,
+        "hold": 2,
+        "sell": 0,
+        "strongSell": 0
+      },
+      {
+        "period": "-3m",
+        "strongBuy": 4,
+        "buy": 6,
+        "hold": 2,
+        "sell": 0,
+        "strongSell": 0
+      }
+    ],
+    "maxAge": 86400
+  },
+  "summaryDetail": {
+    "maxAge": 1,
+    "priceHint": 2,
+    "previousClose": 66.36,
+    "open": 66.675,
+    "dayLow": 66.5615,
+    "dayHigh": 67.26,
+    "regularMarketPreviousClose": 66.36,
+    "regularMarketOpen": 66.675,
+    "regularMarketDayLow": 66.5615,
+    "regularMarketDayHigh": 67.26,
+    "dividendRate": 1.49,
+    "dividendYield": 0.0224,
+    "exDividendDate": "2024-08-09T00:00:00.000Z",
+    "payoutRatio": 0.7157,
+    "fiveYearAvgDividendYield": 2.36,
+    "beta": 0.18,
+    "trailingPE": 32.33178,
+    "forwardPE": 12.249563,
+    "volume": 2954657,
+    "regularMarketVolume": 2954657,
+    "averageVolume": 5416831,
+    "averageVolume10days": 7278190,
+    "averageDailyVolume10Day": 7278190,
+    "bid": 67.17,
+    "ask": 67.34,
+    "bidSize": 100,
+    "askSize": 100,
+    "marketCap": 208516333568,
+    "fiftyTwoWeekLow": 60.47,
+    "fiftyTwoWeekHigh": 87.68,
+    "priceToSalesTrailing12Months": 4.0721073,
+    "fiftyDayAverage": 72.9476,
+    "twoHundredDayAverage": 74.74865,
+    "trailingAnnualDividendRate": 2.97,
+    "trailingAnnualDividendYield": 0.044755876,
+    "currency": "USD",
+    "fromCurrency": null,
+    "toCurrency": null,
+    "lastMarket": null,
+    "coinMarketCapLink": null,
+    "algorithm": null,
+    "tradeable": false
+  },
+  "cashflowStatementHistory": {
+    "cashflowStatements": [
+      {
+        "maxAge": 1,
+        "endDate": "2023-12-31T00:00:00.000Z",
+        "netIncome": 5961000000
+      },
+      {
+        "maxAge": 1,
+        "endDate": "2022-12-31T00:00:00.000Z",
+        "netIncome": 3288000000
+      },
+      {
+        "maxAge": 1,
+        "endDate": "2021-12-31T00:00:00.000Z",
+        "netIncome": 112000000
+      },
+      {
+        "maxAge": 1,
+        "endDate": "2020-12-31T00:00:00.000Z",
+        "netIncome": 3196000000
+      }
+    ],
+    "maxAge": 86400
+  },
+  "earnings": {
+    "maxAge": 86400,
+    "earningsChart": {
+      "quarterly": [
+        {
+          "date": "4Q2023",
+          "actual": 0.725,
+          "estimate": 0.76251
+        },
+        {
+          "date": "1Q2024",
+          "actual": 1.03,
+          "estimate": 0.95002
+        },
+        {
+          "date": "2Q2024",
+          "actual": 0.99,
+          "estimate": 0.9938
+        },
+        {
+          "date": "3Q2024",
+          "actual": 1.04,
+          "estimate": 1.02836
+        }
+      ],
+      "currentQuarterEstimate": 1.10154,
+      "currentQuarterEstimateDate": "4Q",
+      "currentQuarterEstimateYear": 2024,
+      "earningsDate": [
+        "2025-02-06T07:00:00.000Z"
+      ],
+      "isEarningsDateEstimate": false
+    },
+    "financialsChart": {
+      "yearly": [
+        {
+          "date": 2020,
+          "revenue": 26617000000,
+          "earnings": 3196000000
+        },
+        {
+          "date": 2021,
+          "revenue": 37417000000,
+          "earnings": 112000000
+        },
+        {
+          "date": 2022,
+          "revenue": 44351000000,
+          "earnings": 3288000000
+        },
+        {
+          "date": 2023,
+          "revenue": 45811000000,
+          "earnings": 5961000000
+        }
+      ],
+      "quarterly": [
+        {
+          "date": "4Q2023",
+          "revenue": 12024000000,
+          "earnings": 959000000
+        },
+        {
+          "date": "1Q2024",
+          "revenue": 12679000000,
+          "earnings": 2179000000
+        },
+        {
+          "date": "2Q2024",
+          "revenue": 12938000000,
+          "earnings": 1927000000
+        },
+        {
+          "date": "3Q2024",
+          "revenue": 13565000000,
+          "earnings": 1429000000
+        }
+      ]
+    },
+    "financialCurrency": "USD"
+  },
+  "calendarEvents": {
+    "maxAge": 1,
+    "earnings": {
+      "earningsDate": [
+        "2025-02-06T07:00:00.000Z"
+      ],
+      "earningsCallDate": [
+        1731420000
+      ],
+      "isEarningsDateEstimate": false,
+      "earningsAverage": 1.10154,
+      "earningsLow": 1.03,
+      "earningsHigh": 1.21,
+      "revenueAverage": 14135123800,
+      "revenueLow": 13580000000,
+      "revenueHigh": 14640000000
+    },
+    "exDividendDate": "2024-08-09T00:00:00.000Z",
+    "dividendDate": "2024-09-09T00:00:00.000Z"
+  },
+  "defaultKeyStatistics": {
+    "maxAge": 1,
+    "priceHint": 2,
+    "enterpriseValue": 129626996736,
+    "forwardPE": 14.080959,
+    "profitMargins": 0.12684,
+    "floatShares": 1544528500,
+    "sharesOutstanding": 3100610048,
+    "sharesShort": 8065227,
+    "sharesShortPriorMonth": "1970-02-16T14:51:06.000Z",
+    "sharesShortPreviousMonthDate": "2024-10-15T00:00:00.000Z",
+    "dateShortInterest": 1731628800,
+    "sharesPercentSharesOut": 0.0026,
+    "heldPercentInsiders": 0.00005,
+    "heldPercentInstitutions": 0.16756001,
+    "shortRatio": 1.23,
+    "shortPercentOfFloat": 0.0026,
+    "beta": 0.18,
+    "impliedSharesOutstanding": 3117380096,
+    "category": null,
+    "bookValue": 26.27,
+    "priceToBook": 2.559958,
+    "fundFamily": null,
+    "legalType": null,
+    "lastFiscalYearEnd": "2023-12-31T00:00:00.000Z",
+    "nextFiscalYearEnd": "2024-12-31T00:00:00.000Z",
+    "mostRecentQuarter": "2024-09-30T00:00:00.000Z",
+    "earningsQuarterlyGrowth": 0.04,
+    "netIncomeToCommon": 6495000064,
+    "trailingEps": 2.08,
+    "forwardEps": 5.49,
+    "lastSplitFactor": "2:1",
+    "lastSplitDate": 1437955200,
+    "enterpriseToRevenue": 2.531,
+    "enterpriseToEbitda": 7.048,
+    "52WeekChange": 0.03493452,
+    "SandP52WeekChange": 0.3232665,
+    "lastDividendValue": 0.5,
+    "lastDividendDate": "2024-08-09T00:00:00.000Z"
+  },
+  "financialData": {
+    "maxAge": 86400,
+    "currentPrice": 67.2501,
+    "targetHighPrice": 103,
+    "targetLowPrice": 75.5,
+    "targetMeanPrice": 88.26545,
+    "targetMedianPrice": 88,
+    "recommendationMean": 1.5,
+    "recommendationKey": "strong_buy",
+    "numberOfAnalystOpinions": 11,
+    "totalCash": 4929999872,
+    "totalCashPerShare": 3.181,
+    "ebitda": 18390999040,
+    "totalDebt": 31612999680,
+    "quickRatio": 0.713,
+    "currentRatio": 0.932,
+    "totalRevenue": 51206000640,
+    "debtToEquity": 77.473,
+    "revenuePerShare": 2.742403,
+    "returnOnAssets": 0.085030004,
+    "returnOnEquity": 0.16660999,
+    "freeCashflow": 9507250176,
+    "operatingCashflow": 11333999616,
+    "earningsGrowth": 0.034,
+    "revenueGrowth": 0.18,
+    "grossMargins": 0.82606006,
+    "ebitdaMargins": 0.35916,
+    "operatingMargins": 0.20398001,
+    "profitMargins": 0.12684,
+    "financialCurrency": "USD"
+  }
+}

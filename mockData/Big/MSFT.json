@@ -1,0 +1,407 @@
+{
+  "assetProfile": {
+    "address1": "One Microsoft Way",
+    "city": "Redmond",
+    "state": "WA",
+    "zip": "98052-6399",
+    "country": "United States",
+    "phone": "425 882 8080",
+    "website": "https://www.microsoft.com",
+    "industry": "Software - Infrastructure",
+    "industryKey": "software-infrastructure",
+    "industryDisp": "Software - Infrastructure",
+    "sector": "Technology",
+    "sectorKey": "technology",
+    "sectorDisp": "Technology",
+    "longBusinessSummary": "Microsoft Corporation develops and supports software, services, devices and solutions worldwide. The Productivity and Business Processes segment offers office, exchange, SharePoint, Microsoft Teams, office 365 Security and Compliance, Microsoft viva, and Microsoft 365 copilot; and office consumer services, such as Microsoft 365 consumer subscriptions, Office licensed on-premises, and other office services. This segment also provides LinkedIn; and dynamics business solutions, including Dynamics 365, a set of intelligent, cloud-based applications across ERP, CRM, power apps, and power automate; and on-premises ERP and CRM applications. The Intelligent Cloud segment offers server products and cloud services, such as azure and other cloud services; SQL and windows server, visual studio, system center, and related client access licenses, as well as nuance and GitHub; and enterprise services including enterprise support services, industry solutions, and nuance professional services. The More Personal Computing segment offers Windows, including windows OEM licensing and other non-volume licensing of the Windows operating system; Windows commercial comprising volume licensing of the Windows operating system, windows cloud services, and other Windows commercial offerings; patent licensing; and windows Internet of Things; and devices, such as surface, HoloLens, and PC accessories. Additionally, this segment provides gaming, which includes Xbox hardware and content, and first- and third-party content; Xbox game pass and other subscriptions, cloud gaming, advertising, third-party disc royalties, and other cloud services; and search and news advertising, which includes Bing, Microsoft News and Edge, and third-party affiliates. The company sells its products through OEMs, distributors, and resellers; and directly through digital marketplaces, online, and retail stores. The company was founded in 1975 and is headquartered in Redmond, Washington.",
+    "fullTimeEmployees": 228000,
+    "companyOfficers": [
+      {
+        "maxAge": 1,
+        "name": "Mr. Bradford L. Smith LCA",
+        "age": 64,
+        "title": "President & Vice Chairman",
+        "yearBorn": 1959,
+        "fiscalYear": 2024,
+        "totalPay": 4755618,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. Judson B. Althoff",
+        "age": 50,
+        "title": "Executive VP & Chief Commercial Officer",
+        "yearBorn": 1973,
+        "fiscalYear": 2024,
+        "totalPay": 4534974,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. Christopher David Young",
+        "age": 51,
+        "title": "Executive Vice President of Business Development, Strategy & Ventures",
+        "yearBorn": 1972,
+        "fiscalYear": 2024,
+        "totalPay": 2993772,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Ms. Carolina  Dybeck Happe",
+        "age": 51,
+        "title": "Executive VP & COO",
+        "yearBorn": 1972,
+        "fiscalYear": 2024,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Ms. Alice L. Jolla",
+        "age": 57,
+        "title": "Corporate VP & Chief Accounting Officer",
+        "yearBorn": 1966,
+        "fiscalYear": 2024,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. James Kevin Scott",
+        "age": 51,
+        "title": "Executive VP of AI & CTO",
+        "yearBorn": 1972,
+        "fiscalYear": 2024,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. Brett  Iversen",
+        "title": "Vice President of Investor Relations",
+        "fiscalYear": 2024,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. Hossein  Nowbar",
+        "title": "Chief Legal Officer",
+        "fiscalYear": 2024,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. Frank X. Shaw",
+        "title": "Chief Communications Officer",
+        "fiscalYear": 2024,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. Takeshi  Numoto",
+        "age": 52,
+        "title": "Executive VP & Chief Marketing Officer",
+        "yearBorn": 1971,
+        "fiscalYear": 2024,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      }
+    ],
+    "auditRisk": 3,
+    "boardRisk": 4,
+    "compensationRisk": 2,
+    "shareHolderRightsRisk": 2,
+    "overallRisk": 1,
+    "governanceEpochDate": "2024-11-01T00:00:00.000Z",
+    "compensationAsOfEpochDate": "2024-12-31T00:00:00.000Z",
+    "irWebsite": "http://www.microsoft.com/investor/default.aspx",
+    "maxAge": 86400
+  },
+  "recommendationTrend": {
+    "trend": [
+      {
+        "period": "0m",
+        "strongBuy": 13,
+        "buy": 37,
+        "hold": 5,
+        "sell": 0,
+        "strongSell": 0
+      },
+      {
+        "period": "-1m",
+        "strongBuy": 13,
+        "buy": 37,
+        "hold": 5,
+        "sell": 0,
+        "strongSell": 0
+      },
+      {
+        "period": "-2m",
+        "strongBuy": 14,
+        "buy": 39,
+        "hold": 3,
+        "sell": 0,
+        "strongSell": 0
+      },
+      {
+        "period": "-3m",
+        "strongBuy": 14,
+        "buy": 40,
+        "hold": 2,
+        "sell": 0,
+        "strongSell": 0
+      }
+    ],
+    "maxAge": 86400
+  },
+  "summaryDetail": {
+    "maxAge": 1,
+    "priceHint": 2,
+    "previousClose": 427.99,
+    "open": 425.105,
+    "dayLow": 422.99,
+    "dayHigh": 427.2299,
+    "regularMarketPreviousClose": 427.99,
+    "regularMarketOpen": 425.105,
+    "regularMarketDayLow": 422.99,
+    "regularMarketDayHigh": 427.2299,
+    "dividendRate": 3.32,
+    "dividendYield": 0.0078,
+    "exDividendDate": "2024-11-21T00:00:00.000Z",
+    "payoutRatio": 0.2477,
+    "fiveYearAvgDividendYield": 0.88,
+    "beta": 0.904,
+    "trailingPE": 35.033443,
+    "forwardPE": 28.378262,
+    "volume": 8134284,
+    "regularMarketVolume": 8134284,
+    "averageVolume": 20025007,
+    "averageVolume10days": 23878940,
+    "averageDailyVolume10Day": 23878940,
+    "bid": 423.92,
+    "ask": 424.6,
+    "bidSize": 200,
+    "askSize": 200,
+    "marketCap": 3154285166592,
+    "fiftyTwoWeekLow": 362.9,
+    "fiftyTwoWeekHigh": 468.35,
+    "priceToSalesTrailing12Months": 12.409163,
+    "fiftyDayAverage": 421.5162,
+    "twoHundredDayAverage": 421.88055,
+    "trailingAnnualDividendRate": 3.08,
+    "trailingAnnualDividendYield": 0.0071964297,
+    "currency": "USD",
+    "fromCurrency": null,
+    "toCurrency": null,
+    "lastMarket": null,
+    "coinMarketCapLink": null,
+    "algorithm": null,
+    "tradeable": false
+  },
+  "cashflowStatementHistory": {
+    "cashflowStatements": [
+      {
+        "maxAge": 1,
+        "endDate": "2024-06-30T00:00:00.000Z",
+        "netIncome": 88136000000
+      },
+      {
+        "maxAge": 1,
+        "endDate": "2023-06-30T00:00:00.000Z",
+        "netIncome": 72361000000
+      },
+      {
+        "maxAge": 1,
+        "endDate": "2022-06-30T00:00:00.000Z",
+        "netIncome": 72738000000
+      },
+      {
+        "maxAge": 1,
+        "endDate": "2021-06-30T00:00:00.000Z",
+        "netIncome": 61271000000
+      }
+    ],
+    "maxAge": 86400
+  },
+  "earnings": {
+    "maxAge": 86400,
+    "earningsChart": {
+      "quarterly": [
+        {
+          "date": "4Q2023",
+          "actual": 2.93,
+          "estimate": 2.7654
+        },
+        {
+          "date": "1Q2024",
+          "actual": 2.94,
+          "estimate": 2.82728
+        },
+        {
+          "date": "2Q2024",
+          "actual": 2.95,
+          "estimate": 2.93442
+        },
+        {
+          "date": "3Q2024",
+          "actual": 3.3,
+          "estimate": 3.10593
+        }
+      ],
+      "currentQuarterEstimate": 3.13894,
+      "currentQuarterEstimateDate": "4Q",
+      "currentQuarterEstimateYear": 2024,
+      "earningsDate": [
+        "2025-01-28T21:00:00.000Z",
+        "2025-02-03T21:00:00.000Z"
+      ],
+      "isEarningsDateEstimate": true
+    },
+    "financialsChart": {
+      "yearly": [
+        {
+          "date": 2021,
+          "revenue": 168088000000,
+          "earnings": 61271000000
+        },
+        {
+          "date": 2022,
+          "revenue": 198270000000,
+          "earnings": 72738000000
+        },
+        {
+          "date": 2023,
+          "revenue": 211915000000,
+          "earnings": 72361000000
+        },
+        {
+          "date": 2024,
+          "revenue": 245122000000,
+          "earnings": 88136000000
+        }
+      ],
+      "quarterly": [
+        {
+          "date": "4Q2023",
+          "revenue": 62020000000,
+          "earnings": 21870000000
+        },
+        {
+          "date": "1Q2024",
+          "revenue": 61858000000,
+          "earnings": 21939000000
+        },
+        {
+          "date": "2Q2024",
+          "revenue": 64727000000,
+          "earnings": 22036000000
+        },
+        {
+          "date": "3Q2024",
+          "revenue": 65585000000,
+          "earnings": 24667000000
+        }
+      ]
+    },
+    "financialCurrency": "USD"
+  },
+  "calendarEvents": {
+    "maxAge": 1,
+    "earnings": {
+      "earningsDate": [
+        "2025-01-28T21:00:00.000Z",
+        "2025-02-03T21:00:00.000Z"
+      ],
+      "earningsCallDate": [
+        1730323800
+      ],
+      "isEarningsDateEstimate": true,
+      "earningsAverage": 3.15862,
+      "earningsLow": 3.08,
+      "earningsHigh": 3.47,
+      "revenueAverage": 68912341850,
+      "revenueLow": 68488700000,
+      "revenueHigh": 70520000000
+    },
+    "exDividendDate": "2024-11-21T00:00:00.000Z",
+    "dividendDate": "2024-12-12T00:00:00.000Z"
+  },
+  "defaultKeyStatistics": {
+    "maxAge": 1,
+    "priceHint": 2,
+    "enterpriseValue": 3200463667200,
+    "forwardPE": 28.182846,
+    "profitMargins": 0.35608003,
+    "floatShares": 7424694989,
+    "sharesOutstanding": 7434880000,
+    "sharesShort": 56018482,
+    "sharesShortPriorMonth": "1971-11-30T01:49:58.000Z",
+    "sharesShortPreviousMonthDate": "2024-10-15T00:00:00.000Z",
+    "dateShortInterest": 1731628800,
+    "sharesPercentSharesOut": 0.0075,
+    "heldPercentInsiders": 0.00056,
+    "heldPercentInstitutions": 0.73538,
+    "shortRatio": 2.58,
+    "shortPercentOfFloat": 0.0075,
+    "beta": 0.904,
+    "impliedSharesOutstanding": 7647889920,
+    "category": null,
+    "bookValue": 38.693,
+    "priceToBook": 10.964644,
+    "fundFamily": null,
+    "legalType": null,
+    "lastFiscalYearEnd": "2024-06-30T00:00:00.000Z",
+    "nextFiscalYearEnd": "2025-06-30T00:00:00.000Z",
+    "mostRecentQuarter": "2024-09-30T00:00:00.000Z",
+    "earningsQuarterlyGrowth": 0.107,
+    "netIncomeToCommon": 90511998976,
+    "trailingEps": 12.11,
+    "forwardEps": 14.95,
+    "lastSplitFactor": "2:1",
+    "lastSplitDate": 1045526400,
+    "enterpriseToRevenue": 12.591,
+    "enterpriseToEbitda": 23.438,
+    "52WeekChange": 0.12970829,
+    "SandP52WeekChange": 0.3232665,
+    "lastDividendValue": 0.83,
+    "lastDividendDate": "2024-11-21T00:00:00.000Z"
+  },
+  "financialData": {
+    "maxAge": 86400,
+    "currentPrice": 424.255,
+    "targetHighPrice": 600,
+    "targetLowPrice": 420,
+    "targetMeanPrice": 504.76813,
+    "targetMedianPrice": 500,
+    "recommendationMean": 1.41818,
+    "recommendationKey": "strong_buy",
+    "numberOfAnalystOpinions": 48,
+    "totalCash": 78429003776,
+    "totalCashPerShare": 10.549,
+    "ebitda": 136551997440,
+    "totalDebt": 96838000640,
+    "quickRatio": 1.163,
+    "currentRatio": 1.301,
+    "totalRevenue": 254189993984,
+    "debtToEquity": 33.657,
+    "revenuePerShare": 34.202,
+    "returnOnAssets": 0.14592,
+    "returnOnEquity": 0.35604,
+    "freeCashflow": 61280874496,
+    "operatingCashflow": 122144997376,
+    "earningsGrowth": 0.104,
+    "revenueGrowth": 0.16,
+    "grossMargins": 0.69348997,
+    "ebitdaMargins": 0.53720003,
+    "operatingMargins": 0.46583998,
+    "profitMargins": 0.35608003,
+    "financialCurrency": "USD"
+  }
+}
