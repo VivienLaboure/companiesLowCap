@@ -1,0 +1,409 @@
+{
+  "assetProfile": {
+    "address1": "One Johnson & Johnson Plaza",
+    "city": "New Brunswick",
+    "state": "NJ",
+    "zip": "08933",
+    "country": "United States",
+    "phone": "732 524 0400",
+    "website": "https://www.jnj.com",
+    "industry": "Drug Manufacturers - General",
+    "industryKey": "drug-manufacturers-general",
+    "industryDisp": "Drug Manufacturers - General",
+    "sector": "Healthcare",
+    "sectorKey": "healthcare",
+    "sectorDisp": "Healthcare",
+    "longBusinessSummary": "Johnson & Johnson, together with its subsidiaries, researches, develops, manufactures, and sells various products in the healthcare field worldwide. The company's Innovative Medicine segment offers products for various therapeutic areas, such as immunology, including rheumatoid arthritis, psoriatic arthritis, inflammatory bowel disease, and psoriasis; infectious diseases comprising HIV/AIDS; neuroscience, consisting of mood disorders, neurodegenerative disorders, and schizophrenia; oncology, such as prostate cancer, hematologic malignancies, lung cancer, and bladder cancer; cardiovascular and metabolism, including thrombosis, diabetes, and macular degeneration; and pulmonary hypertension comprising pulmonary arterial hypertension through retailers, wholesalers, distributors, hospitals, and healthcare professionals for prescription use. Its MedTech segment provides Interventional Solutions, including electrophysiology products to treat heart rhythm disorders; the heart recovery portfolio, which includes technologies to treat severe coronary artery disease requiring high-risk PCI or AMI cardiogenic shock; and neurovascular care that treats hemorrhagic and ischemic stroke. this segment also offers an orthopaedics portfolio that includes products and enabling technologies that support hips, knees, trauma, spine, sports, and other; surgery portfolios comprising advanced and general surgery technologies, as well as solutions for breast aesthetics, ear, nose, and throat procedures; contact lenses under the ACUVUE Brand; and TECNIS intraocular lenses for cataract surgery. It distributes its products to wholesalers, hospitals, and retailers, as well as physicians, nurses, hospitals, eye care professionals, and clinics. The company has a collaboration agreement with Stand Up To Cancer for research testing a combination of teclistamab and daratumumab to treat a rare disease AL amyloidosis. Johnson & Johnson was founded in 1886 and is based in New Brunswick, New Jersey.",
+    "fullTimeEmployees": 131900,
+    "companyOfficers": [
+      {
+        "maxAge": 1,
+        "name": "Mr. Joaquin  Duato",
+        "age": 60,
+        "title": "CEO & Chairman",
+        "yearBorn": 1963,
+        "fiscalYear": 2023,
+        "totalPay": 6205107,
+        "exercisedValue": 14985999,
+        "unexercisedValue": 34142040
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. Joseph J. Wolk CPA",
+        "age": 56,
+        "title": "Executive VP & CFO",
+        "yearBorn": 1967,
+        "fiscalYear": 2023,
+        "totalPay": 3174834,
+        "exercisedValue": 0,
+        "unexercisedValue": 4895969
+      },
+      {
+        "maxAge": 1,
+        "name": "Dr. Peter M. Fasolo Ph.D.",
+        "age": 60,
+        "title": "Executive VP & Chief Human Resources Officer",
+        "yearBorn": 1963,
+        "fiscalYear": 2023,
+        "totalPay": 2148436,
+        "exercisedValue": 0,
+        "unexercisedValue": 2433349
+      },
+      {
+        "maxAge": 1,
+        "name": "Ms. Jennifer L. Taubert",
+        "age": 59,
+        "title": "Executive VP & Worldwide Chairman of Innovative Medicine",
+        "yearBorn": 1964,
+        "fiscalYear": 2023,
+        "totalPay": 3104582,
+        "exercisedValue": 0,
+        "unexercisedValue": 15487583
+      },
+      {
+        "maxAge": 1,
+        "name": "Dr. John C. Reed M.D., Ph.D.",
+        "age": 65,
+        "title": "Executive Vice President of Innovative Medicine, R&D",
+        "yearBorn": 1958,
+        "fiscalYear": 2023,
+        "totalPay": 8573416,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. Robert J. Decker Jr.",
+        "age": 51,
+        "title": "Controller & Chief Accounting Officer",
+        "yearBorn": 1972,
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. James  Swanson",
+        "age": 57,
+        "title": "Executive VP & Chief Information Officer",
+        "yearBorn": 1966,
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Ms. Jessica  Moore",
+        "title": "Vice President of Investor Relations",
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. Dirk  Brinckman",
+        "title": "Chief Compliance Officer",
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Ms. Elizabeth  Forminard J.D.",
+        "age": 52,
+        "title": "Executive VP & Chief Legal Officer",
+        "yearBorn": 1971,
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      }
+    ],
+    "auditRisk": 9,
+    "boardRisk": 4,
+    "compensationRisk": 7,
+    "shareHolderRightsRisk": 2,
+    "overallRisk": 4,
+    "governanceEpochDate": "2024-11-01T00:00:00.000Z",
+    "compensationAsOfEpochDate": "2023-12-31T00:00:00.000Z",
+    "irWebsite": "http://www.investor.jnj.com/investor-relations.cfm",
+    "maxAge": 86400
+  },
+  "recommendationTrend": {
+    "trend": [
+      {
+        "period": "0m",
+        "strongBuy": 3,
+        "buy": 8,
+        "hold": 13,
+        "sell": 0,
+        "strongSell": 0
+      },
+      {
+        "period": "-1m",
+        "strongBuy": 3,
+        "buy": 7,
+        "hold": 13,
+        "sell": 0,
+        "strongSell": 0
+      },
+      {
+        "period": "-2m",
+        "strongBuy": 3,
+        "buy": 7,
+        "hold": 13,
+        "sell": 0,
+        "strongSell": 0
+      },
+      {
+        "period": "-3m",
+        "strongBuy": 4,
+        "buy": 7,
+        "hold": 12,
+        "sell": 0,
+        "strongSell": 0
+      }
+    ],
+    "maxAge": 86400
+  },
+  "summaryDetail": {
+    "maxAge": 1,
+    "priceHint": 2,
+    "previousClose": 154.52,
+    "open": 154.63,
+    "dayLow": 154.6,
+    "dayHigh": 156.625,
+    "regularMarketPreviousClose": 154.52,
+    "regularMarketOpen": 154.63,
+    "regularMarketDayLow": 154.6,
+    "regularMarketDayHigh": 156.625,
+    "dividendRate": 4.96,
+    "dividendYield": 0.0321,
+    "exDividendDate": "2024-11-26T00:00:00.000Z",
+    "payoutRatio": 0.8033,
+    "fiveYearAvgDividendYield": 2.71,
+    "beta": 0.518,
+    "trailingPE": 25.683168,
+    "forwardPE": 14.683019,
+    "volume": 2258706,
+    "regularMarketVolume": 2258706,
+    "averageVolume": 6522539,
+    "averageVolume10days": 8736000,
+    "averageDailyVolume10Day": 8736000,
+    "bid": 155.47,
+    "ask": 155.54,
+    "bidSize": 800,
+    "askSize": 800,
+    "marketCap": 374722002944,
+    "fiftyTwoWeekLow": 143.13,
+    "fiftyTwoWeekHigh": 168.85,
+    "priceToSalesTrailing12Months": 4.272966,
+    "fiftyDayAverage": 159.7246,
+    "twoHundredDayAverage": 155.82664,
+    "trailingAnnualDividendRate": 4.86,
+    "trailingAnnualDividendYield": 0.03145224,
+    "currency": "USD",
+    "fromCurrency": null,
+    "toCurrency": null,
+    "lastMarket": null,
+    "coinMarketCapLink": null,
+    "algorithm": null,
+    "tradeable": false
+  },
+  "cashflowStatementHistory": {
+    "cashflowStatements": [
+      {
+        "maxAge": 1,
+        "endDate": "2023-12-31T00:00:00.000Z",
+        "netIncome": 35153000000
+      },
+      {
+        "maxAge": 1,
+        "endDate": "2022-12-31T00:00:00.000Z",
+        "netIncome": 17941000000
+      },
+      {
+        "maxAge": 1,
+        "endDate": "2021-12-31T00:00:00.000Z",
+        "netIncome": 20878000000
+      },
+      {
+        "maxAge": 1,
+        "endDate": "2020-12-31T00:00:00.000Z",
+        "netIncome": 14714000000
+      }
+    ],
+    "maxAge": 86400
+  },
+  "earnings": {
+    "maxAge": 86400,
+    "earningsChart": {
+      "quarterly": [
+        {
+          "date": "4Q2023",
+          "actual": 2.29,
+          "estimate": 2.28119
+        },
+        {
+          "date": "1Q2024",
+          "actual": 2.71,
+          "estimate": 2.64955
+        },
+        {
+          "date": "2Q2024",
+          "actual": 2.82,
+          "estimate": 2.70357
+        },
+        {
+          "date": "3Q2024",
+          "actual": 2.42,
+          "estimate": 2.20587
+        }
+      ],
+      "currentQuarterEstimate": 2.03719,
+      "currentQuarterEstimateDate": "4Q",
+      "currentQuarterEstimateYear": 2024,
+      "earningsDate": [
+        "2025-01-22T13:30:00.000Z"
+      ],
+      "isEarningsDateEstimate": false
+    },
+    "financialsChart": {
+      "yearly": [
+        {
+          "date": 2020,
+          "revenue": 82584000000,
+          "earnings": 14714000000
+        },
+        {
+          "date": 2021,
+          "revenue": 93775000000,
+          "earnings": 20878000000
+        },
+        {
+          "date": 2022,
+          "revenue": 94943000000,
+          "earnings": 17941000000
+        },
+        {
+          "date": 2023,
+          "revenue": 85159000000,
+          "earnings": 35153000000
+        }
+      ],
+      "quarterly": [
+        {
+          "date": "4Q2023",
+          "revenue": 21395000000,
+          "earnings": 4049000000
+        },
+        {
+          "date": "1Q2024",
+          "revenue": 21383000000,
+          "earnings": 5354000000
+        },
+        {
+          "date": "2Q2024",
+          "revenue": 22447000000,
+          "earnings": 4686000000
+        },
+        {
+          "date": "3Q2024",
+          "revenue": 22471000000,
+          "earnings": 2694000000
+        }
+      ]
+    },
+    "financialCurrency": "USD"
+  },
+  "calendarEvents": {
+    "maxAge": 1,
+    "earnings": {
+      "earningsDate": [
+        "2025-01-22T13:30:00.000Z"
+      ],
+      "earningsCallDate": [
+        1728995400
+      ],
+      "isEarningsDateEstimate": false,
+      "earningsAverage": 2.03719,
+      "earningsLow": 1.93,
+      "earningsHigh": 2.433,
+      "revenueAverage": 22450354420,
+      "revenueLow": 22294000000,
+      "revenueHigh": 22753000000
+    },
+    "exDividendDate": "2024-11-26T00:00:00.000Z",
+    "dividendDate": "2024-12-10T00:00:00.000Z"
+  },
+  "defaultKeyStatistics": {
+    "maxAge": 1,
+    "priceHint": 2,
+    "enterpriseValue": 387479896064,
+    "forwardPE": 14.642421,
+    "profitMargins": 0.16744,
+    "floatShares": 2403939309,
+    "sharesOutstanding": 2407620096,
+    "sharesShort": 17476968,
+    "sharesShortPriorMonth": "1970-08-04T23:07:31.000Z",
+    "sharesShortPreviousMonthDate": "2024-10-15T00:00:00.000Z",
+    "dateShortInterest": 1731628800,
+    "sharesPercentSharesOut": 0.0073,
+    "heldPercentInsiders": 0.00091,
+    "heldPercentInstitutions": 0.73113996,
+    "shortRatio": 2.54,
+    "shortPercentOfFloat": 0.0073,
+    "beta": 0.518,
+    "impliedSharesOutstanding": 2407620096,
+    "category": null,
+    "bookValue": 29.144,
+    "priceToBook": 5.3403788,
+    "fundFamily": null,
+    "legalType": null,
+    "lastFiscalYearEnd": "2023-12-31T00:00:00.000Z",
+    "nextFiscalYearEnd": "2024-12-31T00:00:00.000Z",
+    "mostRecentQuarter": "2024-09-29T00:00:00.000Z",
+    "earningsQuarterlyGrowth": -0.897,
+    "netIncomeToCommon": 14766999552,
+    "trailingEps": 6.06,
+    "forwardEps": 10.6,
+    "lastSplitFactor": "2:1",
+    "lastSplitDate": 992390400,
+    "enterpriseToRevenue": 4.418,
+    "enterpriseToEbitda": 12.894,
+    "52WeekChange": 0.015843749,
+    "SandP52WeekChange": 0.3232665,
+    "lastDividendValue": 1.24,
+    "lastDividendDate": "2024-11-26T00:00:00.000Z"
+  },
+  "financialData": {
+    "maxAge": 86400,
+    "currentPrice": 155.64,
+    "targetHighPrice": 215,
+    "targetLowPrice": 155,
+    "targetMeanPrice": 174.8887,
+    "targetMedianPrice": 175,
+    "recommendationMean": 2.20833,
+    "recommendationKey": "buy",
+    "numberOfAnalystOpinions": 23,
+    "totalCash": 20297000960,
+    "totalCashPerShare": 8.43,
+    "ebitda": 30051999744,
+    "totalDebt": 35750998016,
+    "quickRatio": 0.705,
+    "currentRatio": 1.029,
+    "totalRevenue": 87695998976,
+    "debtToEquity": 50.958,
+    "revenuePerShare": 36.428,
+    "returnOnAssets": 0.08403,
+    "returnOnEquity": 0.20889,
+    "freeCashflow": 19922499584,
+    "operatingCashflow": 25145999360,
+    "earningsGrowth": -0.891,
+    "revenueGrowth": 0.052,
+    "grossMargins": 0.69391,
+    "ebitdaMargins": 0.34268,
+    "operatingMargins": 0.24516001,
+    "profitMargins": 0.16744,
+    "financialCurrency": "USD"
+  }
+}

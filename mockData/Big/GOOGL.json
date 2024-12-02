@@ -1,0 +1,413 @@
+{
+  "assetProfile": {
+    "address1": "1600 Amphitheatre Parkway",
+    "city": "Mountain View",
+    "state": "CA",
+    "zip": "94043",
+    "country": "United States",
+    "phone": "650 253 0000",
+    "website": "https://abc.xyz",
+    "industry": "Internet Content & Information",
+    "industryKey": "internet-content-information",
+    "industryDisp": "Internet Content & Information",
+    "sector": "Communication Services",
+    "sectorKey": "communication-services",
+    "sectorDisp": "Communication Services",
+    "longBusinessSummary": "Alphabet Inc. offers various products and platforms in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America. It operates through Google Services, Google Cloud, and Other Bets segments. The Google Services segment provides products and services, including ads, Android, Chrome, devices, Gmail, Google Drive, Google Maps, Google Photos, Google Play, Search, and YouTube. It is also involved in the sale of apps and in-app purchases and digital content in the Google Play and YouTube; and devices, as well as in the provision of YouTube consumer subscription services. The Google Cloud segment offers infrastructure, cybersecurity, databases, analytics, AI, and other services; Google Workspace that include cloud-based communication and collaboration tools for enterprises, such as Gmail, Docs, Drive, Calendar, and Meet; and other services for enterprise customers. The Other Bets segment sells healthcare-related and internet services. The company was incorporated in 1998 and is headquartered in Mountain View, California.",
+    "fullTimeEmployees": 181269,
+    "companyOfficers": [
+      {
+        "maxAge": 1,
+        "name": "Mr. Sundar  Pichai",
+        "age": 50,
+        "title": "CEO & Director",
+        "yearBorn": 1973,
+        "fiscalYear": 2023,
+        "totalPay": 8802824,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Ms. Ruth M. Porat",
+        "age": 65,
+        "title": "President & Chief Investment Officer",
+        "yearBorn": 1958,
+        "fiscalYear": 2023,
+        "totalPay": 2515700,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Dr. Lawrence Edward Page II",
+        "age": 50,
+        "title": "Co-Founder & Director",
+        "yearBorn": 1973,
+        "fiscalYear": 2023,
+        "totalPay": 1,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. Sergey  Brin",
+        "age": 49,
+        "title": "Co-Founder & Director",
+        "yearBorn": 1974,
+        "fiscalYear": 2023,
+        "totalPay": 1,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. J. Kent Walker",
+        "age": 62,
+        "title": "President of Global Affairs, Chief Legal Officer & Company Secretary",
+        "yearBorn": 1961,
+        "fiscalYear": 2023,
+        "totalPay": 2511737,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Dr. Prabhakar  Raghavan",
+        "age": 62,
+        "title": "Senior Vice President of Knowledge and Information - Google",
+        "yearBorn": 1961,
+        "fiscalYear": 2023,
+        "totalPay": 2511737,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. Philipp  Schindler",
+        "age": 52,
+        "title": "Senior Vice President & Chief Business Officer of Google",
+        "yearBorn": 1971,
+        "fiscalYear": 2023,
+        "totalPay": 2514032,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Ms. Anat  Ashkenazi",
+        "age": 50,
+        "title": "Senior VP & CFO",
+        "yearBorn": 1973,
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Ms. Amie Thuener O'Toole",
+        "age": 48,
+        "title": "Chief Accounting Officer & VP",
+        "yearBorn": 1975,
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Ms. Ellen  West",
+        "title": "Vice President of Investor Relations",
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      }
+    ],
+    "auditRisk": 9,
+    "boardRisk": 8,
+    "compensationRisk": 10,
+    "shareHolderRightsRisk": 10,
+    "overallRisk": 10,
+    "governanceEpochDate": "2024-11-01T00:00:00.000Z",
+    "compensationAsOfEpochDate": "2023-12-31T00:00:00.000Z",
+    "maxAge": 86400
+  },
+  "recommendationTrend": {
+    "trend": [
+      {
+        "period": "0m",
+        "strongBuy": 14,
+        "buy": 37,
+        "hold": 11,
+        "sell": 0,
+        "strongSell": 0
+      },
+      {
+        "period": "-1m",
+        "strongBuy": 14,
+        "buy": 37,
+        "hold": 11,
+        "sell": 0,
+        "strongSell": 0
+      },
+      {
+        "period": "-2m",
+        "strongBuy": 15,
+        "buy": 34,
+        "hold": 13,
+        "sell": 0,
+        "strongSell": 0
+      },
+      {
+        "period": "-3m",
+        "strongBuy": 15,
+        "buy": 35,
+        "hold": 11,
+        "sell": 0,
+        "strongSell": 0
+      }
+    ],
+    "maxAge": 86400
+  },
+  "summaryDetail": {
+    "maxAge": 1,
+    "priceHint": 2,
+    "previousClose": 169.12,
+    "open": 169,
+    "dayLow": 168.02,
+    "dayHigh": 169.4832,
+    "regularMarketPreviousClose": 169.12,
+    "regularMarketOpen": 169,
+    "regularMarketDayLow": 168.02,
+    "regularMarketDayHigh": 169.4832,
+    "dividendRate": 0.8,
+    "dividendYield": 0.0047,
+    "exDividendDate": "2024-12-09T00:00:00.000Z",
+    "payoutRatio": 0.0531,
+    "beta": 1.034,
+    "trailingPE": 22.42374,
+    "forwardPE": 18.869978,
+    "volume": 7779705,
+    "regularMarketVolume": 7779705,
+    "averageVolume": 25884520,
+    "averageVolume10days": 30128140,
+    "averageDailyVolume10Day": 30128140,
+    "bid": 169.06,
+    "ask": 169.25,
+    "bidSize": 100,
+    "askSize": 400,
+    "marketCap": 2077948641280,
+    "fiftyTwoWeekLow": 127.9,
+    "fiftyTwoWeekHigh": 191.75,
+    "priceToSalesTrailing12Months": 6.114149,
+    "fiftyDayAverage": 168.025,
+    "twoHundredDayAverage": 164.19585,
+    "trailingAnnualDividendRate": 0.4,
+    "trailingAnnualDividendYield": 0.0023651845,
+    "currency": "USD",
+    "fromCurrency": null,
+    "toCurrency": null,
+    "lastMarket": null,
+    "coinMarketCapLink": null,
+    "algorithm": null,
+    "tradeable": false
+  },
+  "cashflowStatementHistory": {
+    "cashflowStatements": [
+      {
+        "maxAge": 1,
+        "endDate": "2023-12-31T00:00:00.000Z",
+        "netIncome": 73795000000
+      },
+      {
+        "maxAge": 1,
+        "endDate": "2022-12-31T00:00:00.000Z",
+        "netIncome": 59972000000
+      },
+      {
+        "maxAge": 1,
+        "endDate": "2021-12-31T00:00:00.000Z",
+        "netIncome": 76033000000
+      },
+      {
+        "maxAge": 1,
+        "endDate": "2020-12-31T00:00:00.000Z",
+        "netIncome": 40269000000
+      }
+    ],
+    "maxAge": 86400
+  },
+  "earnings": {
+    "maxAge": 86400,
+    "earningsChart": {
+      "quarterly": [
+        {
+          "date": "4Q2023",
+          "actual": 1.64,
+          "estimate": 1.59617
+        },
+        {
+          "date": "1Q2024",
+          "actual": 1.89,
+          "estimate": 1.51191
+        },
+        {
+          "date": "2Q2024",
+          "actual": 1.89,
+          "estimate": 1.84578
+        },
+        {
+          "date": "3Q2024",
+          "actual": 2.12,
+          "estimate": 1.84619
+        }
+      ],
+      "currentQuarterEstimate": 2.11322,
+      "currentQuarterEstimateDate": "4Q",
+      "currentQuarterEstimateYear": 2024,
+      "earningsDate": [
+        "2025-01-28T21:00:00.000Z",
+        "2025-02-03T21:00:00.000Z"
+      ],
+      "isEarningsDateEstimate": true
+    },
+    "financialsChart": {
+      "yearly": [
+        {
+          "date": 2020,
+          "revenue": 182527000000,
+          "earnings": 40269000000
+        },
+        {
+          "date": 2021,
+          "revenue": 257637000000,
+          "earnings": 76033000000
+        },
+        {
+          "date": 2022,
+          "revenue": 282836000000,
+          "earnings": 59972000000
+        },
+        {
+          "date": 2023,
+          "revenue": 307394000000,
+          "earnings": 73795000000
+        }
+      ],
+      "quarterly": [
+        {
+          "date": "4Q2023",
+          "revenue": 86310000000,
+          "earnings": 20687000000
+        },
+        {
+          "date": "1Q2024",
+          "revenue": 80539000000,
+          "earnings": 23662000000
+        },
+        {
+          "date": "2Q2024",
+          "revenue": 84742000000,
+          "earnings": 23619000000
+        },
+        {
+          "date": "3Q2024",
+          "revenue": 88268000000,
+          "earnings": 26301000000
+        }
+      ]
+    },
+    "financialCurrency": "USD"
+  },
+  "calendarEvents": {
+    "maxAge": 1,
+    "earnings": {
+      "earningsDate": [
+        "2025-01-28T21:00:00.000Z",
+        "2025-02-03T21:00:00.000Z"
+      ],
+      "earningsCallDate": [
+        1730233800
+      ],
+      "isEarningsDateEstimate": true,
+      "earningsAverage": 2.12166,
+      "earningsLow": 1.84,
+      "earningsHigh": 2.44,
+      "revenueAverage": 96618553560,
+      "revenueLow": 94873000000,
+      "revenueHigh": 98900000000
+    },
+    "exDividendDate": "2024-12-09T00:00:00.000Z",
+    "dividendDate": "2024-12-16T00:00:00.000Z"
+  },
+  "defaultKeyStatistics": {
+    "maxAge": 1,
+    "priceHint": 2,
+    "enterpriseValue": 2006256975872,
+    "forwardPE": 18.897734,
+    "profitMargins": 0.27738002,
+    "floatShares": 10916891030,
+    "sharesOutstanding": 5842999808,
+    "sharesShort": 68676244,
+    "sharesShortPriorMonth": "1972-03-03T23:20:41.000Z",
+    "sharesShortPreviousMonthDate": "2024-10-15T00:00:00.000Z",
+    "dateShortInterest": 1731628800,
+    "sharesPercentSharesOut": 0.0056,
+    "heldPercentInsiders": 0.0025099998,
+    "heldPercentInstitutions": 0.807,
+    "shortRatio": 2.55,
+    "shortPercentOfFloat": 0.0117999995,
+    "beta": 1.034,
+    "impliedSharesOutstanding": 12290100224,
+    "category": null,
+    "bookValue": 25.613,
+    "priceToBook": 6.6011395,
+    "fundFamily": null,
+    "legalType": null,
+    "lastFiscalYearEnd": "2023-12-31T00:00:00.000Z",
+    "nextFiscalYearEnd": "2024-12-31T00:00:00.000Z",
+    "mostRecentQuarter": "2024-09-30T00:00:00.000Z",
+    "earningsQuarterlyGrowth": 0.336,
+    "netIncomeToCommon": 94268997632,
+    "trailingEps": 7.54,
+    "forwardEps": 8.96,
+    "lastSplitFactor": "20:1",
+    "lastSplitDate": 1658102400,
+    "enterpriseToRevenue": 5.903,
+    "enterpriseToEbitda": 16.249,
+    "52WeekChange": 0.2528335,
+    "SandP52WeekChange": 0.3232665,
+    "lastDividendValue": 0.2,
+    "lastDividendDate": "2024-09-09T00:00:00.000Z"
+  },
+  "financialData": {
+    "maxAge": 86400,
+    "currentPrice": 169.075,
+    "targetHighPrice": 240,
+    "targetLowPrice": 151,
+    "targetMeanPrice": 209.64458,
+    "targetMedianPrice": 211,
+    "recommendationMean": 1.58065,
+    "recommendationKey": "buy",
+    "numberOfAnalystOpinions": 48,
+    "totalCash": 93229998080,
+    "totalCashPerShare": 7.616,
+    "ebitda": 123469996032,
+    "totalDebt": 29289000960,
+    "quickRatio": 1.761,
+    "currentRatio": 1.95,
+    "totalRevenue": 339859013632,
+    "debtToEquity": 9.324,
+    "revenuePerShare": 27.443,
+    "returnOnAssets": 0.16483,
+    "returnOnEquity": 0.32101002,
+    "freeCashflow": 41104498688,
+    "operatingCashflow": 105101000704,
+    "earningsGrowth": 0.366,
+    "revenueGrowth": 0.151,
+    "grossMargins": 0.58127,
+    "ebitdaMargins": 0.36330003,
+    "operatingMargins": 0.32312,
+    "profitMargins": 0.27738002,
+    "financialCurrency": "USD"
+  }
+}

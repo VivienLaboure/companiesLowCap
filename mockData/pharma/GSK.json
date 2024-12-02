@@ -1,0 +1,392 @@
+{
+  "assetProfile": {
+    "address1": "980 Great West Road",
+    "address2": "Middlesex",
+    "city": "Brentford",
+    "zip": "TW8 9GS",
+    "country": "United Kingdom",
+    "phone": "44 20 8047 5000",
+    "website": "https://www.gsk.com",
+    "industry": "Drug Manufacturers - General",
+    "industryKey": "drug-manufacturers-general",
+    "industryDisp": "Drug Manufacturers - General",
+    "sector": "Healthcare",
+    "sectorKey": "healthcare",
+    "sectorDisp": "Healthcare",
+    "longBusinessSummary": "GSK plc, together with its subsidiaries, engages in the research, development, and manufacture of vaccines, and specialty and general medicines to prevent and treat disease in the United Kingdom, the United States, and internationally. It operates through two segments, Commercial Operations and Total R&D. The company offers shingles, meningitis, respiratory syncytial virus, flu, polio, influenza, and pandemic vaccines. It also provides medicines for HIV, oncology, respiratory/immunology, and other specialty medicine products, as well as inhaled medicines for asthma and chronic obstructive pulmonary disease, and antibiotics for infections. It has a collaboration agreement with CureVac to develop mRNA-based influenza vaccines, and with Wave Life Sciences and Elsie Biotechnologies, Inc for oligonucleotide platform development; and multi-target strategic  alliance with GSK to develop breakthrough treatments for people afflicted with Parkinson's disease; as well as collaboration with Flagship Pioneering to discover novel medicines and vaccines. The company was formerly known as GlaxoSmithKline plc and changed its name to GSK plc in May 2022. GSK plc was founded in 1715 and is headquartered in Brentford, the United Kingdom.dom.",
+    "fullTimeEmployees": 70212,
+    "companyOfficers": [
+      {
+        "maxAge": 1,
+        "name": "Ms. Emma Natasha Walmsley",
+        "age": 54,
+        "title": "CEO & Director",
+        "yearBorn": 1969,
+        "fiscalYear": 2023,
+        "totalPay": 7144984,
+        "exercisedValue": 71470664,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Ms. Julie Belita Brown A.C.A.",
+        "age": 61,
+        "title": "CFO & Executive Director",
+        "yearBorn": 1962,
+        "fiscalYear": 2023,
+        "totalPay": 6819549,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Ms. Shobie  Ramakrishnan",
+        "age": 52,
+        "title": "Chief Digital & Technology Officer",
+        "yearBorn": 1971,
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. Tony  Wood",
+        "title": "Chief Scientific Officer and Head of R&D",
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Ms. Sarah  Elton-Farr",
+        "title": "Head of Investor Relations",
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Ms. Sally  Jackson",
+        "title": "Senior Vice President of Global Communications & CEO Office",
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. David Simon Redfern BSc (Hons), CA",
+        "age": 57,
+        "title": "President of Corporate Development",
+        "yearBorn": 1966,
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Ms. Diana  Conrad",
+        "title": "Chief People Officer",
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. Philip C. Thomson",
+        "title": "President of Global Affairs",
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. Luke V. Miels",
+        "age": 48,
+        "title": "Chief Commercial Officer",
+        "yearBorn": 1975,
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      }
+    ],
+    "compensationAsOfEpochDate": "2023-12-31T00:00:00.000Z",
+    "irWebsite": "http://www.gsk.com/investors.html",
+    "maxAge": 86400
+  },
+  "recommendationTrend": {
+    "trend": [
+      {
+        "period": "0m",
+        "strongBuy": 1,
+        "buy": 2,
+        "hold": 3,
+        "sell": 0,
+        "strongSell": 1
+      },
+      {
+        "period": "-1m",
+        "strongBuy": 1,
+        "buy": 3,
+        "hold": 2,
+        "sell": 0,
+        "strongSell": 1
+      },
+      {
+        "period": "-2m",
+        "strongBuy": 2,
+        "buy": 2,
+        "hold": 2,
+        "sell": 0,
+        "strongSell": 1
+      },
+      {
+        "period": "-3m",
+        "strongBuy": 1,
+        "buy": 2,
+        "hold": 4,
+        "sell": 0,
+        "strongSell": 1
+      }
+    ],
+    "maxAge": 86400
+  },
+  "summaryDetail": {
+    "maxAge": 1,
+    "priceHint": 2,
+    "previousClose": 34.02,
+    "open": 34.19,
+    "dayLow": 34.185,
+    "dayHigh": 34.465,
+    "regularMarketPreviousClose": 34.02,
+    "regularMarketOpen": 34.19,
+    "regularMarketDayLow": 34.185,
+    "regularMarketDayHigh": 34.465,
+    "dividendRate": 1.56,
+    "dividendYield": 0.046,
+    "exDividendDate": "2024-11-15T00:00:00.000Z",
+    "payoutRatio": 0.9854,
+    "fiveYearAvgDividendYield": 4.83,
+    "beta": 0.33,
+    "trailingPE": 22.62829,
+    "forwardPE": 7.998837,
+    "volume": 1867900,
+    "regularMarketVolume": 1867900,
+    "averageVolume": 5653818,
+    "averageVolume10days": 7291600,
+    "averageDailyVolume10Day": 7291600,
+    "bid": 34.38,
+    "ask": 34.38,
+    "bidSize": 800,
+    "askSize": 1800,
+    "marketCap": 70174400512,
+    "fiftyTwoWeekLow": 32.83,
+    "fiftyTwoWeekHigh": 45.93,
+    "priceToSalesTrailing12Months": 2.241206,
+    "fiftyDayAverage": 37.7282,
+    "twoHundredDayAverage": 40.7149,
+    "trailingAnnualDividendRate": 0.61,
+    "trailingAnnualDividendYield": 0.017930629,
+    "currency": "USD",
+    "fromCurrency": null,
+    "toCurrency": null,
+    "lastMarket": null,
+    "coinMarketCapLink": null,
+    "algorithm": null,
+    "tradeable": false
+  },
+  "cashflowStatementHistory": {
+    "cashflowStatements": [
+      {
+        "maxAge": 1,
+        "endDate": "2023-12-31T00:00:00.000Z",
+        "netIncome": 4928000000
+      },
+      {
+        "maxAge": 1,
+        "endDate": "2022-12-31T00:00:00.000Z",
+        "netIncome": 14956000000
+      },
+      {
+        "maxAge": 1,
+        "endDate": "2021-12-31T00:00:00.000Z",
+        "netIncome": 4385000000
+      },
+      {
+        "maxAge": 1,
+        "endDate": "2020-12-31T00:00:00.000Z",
+        "netIncome": 5749000000
+      }
+    ],
+    "maxAge": 86400
+  },
+  "earnings": {
+    "maxAge": 86400,
+    "earningsChart": {
+      "quarterly": [
+        {
+          "date": "4Q2023",
+          "actual": 0.7321,
+          "estimate": 0.76664
+        },
+        {
+          "date": "1Q2024",
+          "actual": 1.07652,
+          "estimate": 0.93506
+        },
+        {
+          "date": "2Q2024",
+          "actual": 1.11458,
+          "estimate": 0.9849
+        },
+        {
+          "date": "3Q2024",
+          "actual": 1.29266,
+          "estimate": 1.16492
+        }
+      ],
+      "currentQuarterEstimate": 0.43874,
+      "currentQuarterEstimateDate": "4Q",
+      "currentQuarterEstimateYear": 2024,
+      "earningsDate": [
+        "2025-02-05T10:59:00.000Z"
+      ],
+      "isEarningsDateEstimate": false
+    },
+    "financialsChart": {
+      "yearly": [
+        {
+          "date": 2020,
+          "revenue": 34099000000,
+          "earnings": 5749000000
+        },
+        {
+          "date": 2021,
+          "revenue": 34114000000,
+          "earnings": 4385000000
+        },
+        {
+          "date": 2022,
+          "revenue": 29324000000,
+          "earnings": 14956000000
+        },
+        {
+          "date": 2023,
+          "revenue": 30328000000,
+          "earnings": 4928000000
+        }
+      ],
+      "quarterly": [
+        {
+          "date": "4Q2023",
+          "revenue": 8052000000,
+          "earnings": 350000000
+        },
+        {
+          "date": "1Q2024",
+          "revenue": 7363000000,
+          "earnings": 1046000000
+        },
+        {
+          "date": "2Q2024",
+          "revenue": 7884000000,
+          "earnings": 1173000000
+        },
+        {
+          "date": "3Q2024",
+          "revenue": 8012000000,
+          "earnings": -58000000
+        }
+      ]
+    },
+    "financialCurrency": "GBP"
+  },
+  "calendarEvents": {
+    "maxAge": 1,
+    "earnings": {
+      "earningsDate": [
+        "2025-02-05T10:59:00.000Z"
+      ],
+      "earningsCallDate": [
+        1730289600
+      ],
+      "isEarningsDateEstimate": false,
+      "earningsAverage": 0.43874,
+      "earningsLow": 0.37346,
+      "earningsHigh": 0.50401,
+      "revenueAverage": 7644019100,
+      "revenueLow": 7158000000,
+      "revenueHigh": 7929544490
+    },
+    "exDividendDate": "2024-11-15T00:00:00.000Z",
+    "dividendDate": "2025-01-09T00:00:00.000Z"
+  },
+  "defaultKeyStatistics": {
+    "maxAge": 1,
+    "priceHint": 2,
+    "enterpriseValue": 151093592064,
+    "forwardPE": 8.039202,
+    "profitMargins": 0.0802,
+    "floatShares": 3949970400,
+    "sharesOutstanding": 2040249984,
+    "sharesShort": 23523589,
+    "sharesShortPriorMonth": "1970-07-11T11:58:44.000Z",
+    "sharesShortPreviousMonthDate": "2024-10-15T00:00:00.000Z",
+    "dateShortInterest": 1731628800,
+    "sharesPercentSharesOut": 0.0115,
+    "heldPercentInsiders": 0.00056,
+    "heldPercentInstitutions": 0.15377,
+    "shortRatio": 3.32,
+    "shortPercentOfFloat": 0.0115,
+    "beta": 0.33,
+    "impliedSharesOutstanding": 2107049984,
+    "category": null,
+    "bookValue": 3.433,
+    "priceToBook": 10.018933,
+    "fundFamily": null,
+    "legalType": null,
+    "lastFiscalYearEnd": "2023-12-31T00:00:00.000Z",
+    "nextFiscalYearEnd": "2024-12-31T00:00:00.000Z",
+    "mostRecentQuarter": "2024-09-30T00:00:00.000Z",
+    "netIncomeToCommon": 2511000064,
+    "trailingEps": 1.52,
+    "forwardEps": 4.3,
+    "lastSplitFactor": "1226:1000",
+    "lastSplitDate": 1658448000,
+    "enterpriseToRevenue": 4.826,
+    "enterpriseToEbitda": 16.322,
+    "52WeekChange": -0.041420102,
+    "SandP52WeekChange": 0.3232665,
+    "lastDividendValue": 0.389,
+    "lastDividendDate": "2024-11-15T00:00:00.000Z"
+  },
+  "financialData": {
+    "maxAge": 86400,
+    "currentPrice": 34.395,
+    "targetHighPrice": 58,
+    "targetLowPrice": 37,
+    "targetMeanPrice": 45.94571,
+    "targetMedianPrice": 45,
+    "recommendationMean": 2.42857,
+    "recommendationKey": "buy",
+    "numberOfAnalystOpinions": 7,
+    "totalCash": 3212000000,
+    "totalCashPerShare": 0.787,
+    "ebitda": 9256999936,
+    "totalDebt": 16058999808,
+    "quickRatio": 0.516,
+    "currentRatio": 0.806,
+    "totalRevenue": 31310999552,
+    "debtToEquity": 119.371,
+    "revenuePerShare": 15.38,
+    "returnOnAssets": 0.07241,
+    "returnOnEquity": 0.21847,
+    "freeCashflow": 6040500224,
+    "operatingCashflow": 7421000192,
+    "revenueGrowth": -0.017,
+    "grossMargins": 0.72387004,
+    "ebitdaMargins": 0.29565,
+    "operatingMargins": 0.08325,
+    "profitMargins": 0.0802,
+    "financialCurrency": "GBP"
+  }
+}

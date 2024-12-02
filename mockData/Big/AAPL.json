@@ -1,0 +1,404 @@
+{
+  "assetProfile": {
+    "address1": "One Apple Park Way",
+    "city": "Cupertino",
+    "state": "CA",
+    "zip": "95014",
+    "country": "United States",
+    "phone": "(408) 996-1010",
+    "website": "https://www.apple.com",
+    "industry": "Consumer Electronics",
+    "industryKey": "consumer-electronics",
+    "industryDisp": "Consumer Electronics",
+    "sector": "Technology",
+    "sectorKey": "technology",
+    "sectorDisp": "Technology",
+    "longBusinessSummary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple TV, Apple Watch, Beats products, and HomePod. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allow customers to discover and download applications and digital content, such as books, music, video, games, and podcasts, as well as advertising services include third-party licensing arrangements and its own advertising platforms. In addition, the company offers various subscription-based services, such as Apple Arcade, a game subscription service; Apple Fitness+, a personalized fitness service; Apple Music, which offers users a curated listening experience with on-demand radio stations; Apple News+, a subscription news and magazine service; Apple TV+, which offers exclusive original content; Apple Card, a co-branded credit card; and Apple Pay, a cashless payment service, as well as licenses its intellectual property. The company serves consumers, and small and mid-sized businesses; and the education, enterprise, and government markets. It distributes third-party applications for its products through the App Store. The company also sells its products through its retail and online stores, and direct sales force; and third-party cellular network carriers, wholesalers, retailers, and resellers. Apple Inc. was founded in 1976 and is headquartered in Cupertino, California.",
+    "fullTimeEmployees": 164000,
+    "companyOfficers": [
+      {
+        "maxAge": 1,
+        "name": "Mr. Timothy D. Cook",
+        "age": 62,
+        "title": "CEO & Director",
+        "yearBorn": 1961,
+        "fiscalYear": 2023,
+        "totalPay": 16239562,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. Luca  Maestri",
+        "age": 60,
+        "title": "CFO & Senior VP",
+        "yearBorn": 1963,
+        "fiscalYear": 2023,
+        "totalPay": 4612242,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Ms. Katherine L. Adams",
+        "age": 59,
+        "title": "Senior VP, General Counsel & Secretary",
+        "yearBorn": 1964,
+        "fiscalYear": 2023,
+        "totalPay": 4618064,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Ms. Deirdre  O'Brien",
+        "age": 56,
+        "title": "Chief People Officer & Senior VP of Retail",
+        "yearBorn": 1967,
+        "fiscalYear": 2023,
+        "totalPay": 4613369,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. Chris  Kondo",
+        "title": "Senior Director of Corporate Accounting",
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Suhasini  Chandramouli",
+        "title": "Director of Investor Relations",
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. Greg  Joswiak",
+        "title": "Senior Vice President of Worldwide Marketing",
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. Adrian  Perica",
+        "age": 49,
+        "title": "Head of Corporate Development",
+        "yearBorn": 1974,
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. Michael  Fenger",
+        "title": "VP of Worldwide Sales",
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      },
+      {
+        "maxAge": 1,
+        "name": "Mr. Ron  Okamoto",
+        "title": "Head of Developer Relations",
+        "fiscalYear": 2023,
+        "exercisedValue": 0,
+        "unexercisedValue": 0
+      }
+    ],
+    "auditRisk": 6,
+    "boardRisk": 1,
+    "compensationRisk": 2,
+    "shareHolderRightsRisk": 1,
+    "overallRisk": 1,
+    "governanceEpochDate": "2024-11-01T00:00:00.000Z",
+    "compensationAsOfEpochDate": "2023-12-31T00:00:00.000Z",
+    "irWebsite": "http://investor.apple.com/",
+    "maxAge": 86400
+  },
+  "recommendationTrend": {
+    "trend": [
+      {
+        "period": "0m",
+        "strongBuy": 8,
+        "buy": 24,
+        "hold": 12,
+        "sell": 1,
+        "strongSell": 2
+      },
+      {
+        "period": "-1m",
+        "strongBuy": 8,
+        "buy": 23,
+        "hold": 12,
+        "sell": 1,
+        "strongSell": 2
+      },
+      {
+        "period": "-2m",
+        "strongBuy": 8,
+        "buy": 24,
+        "hold": 12,
+        "sell": 0,
+        "strongSell": 2
+      },
+      {
+        "period": "-3m",
+        "strongBuy": 8,
+        "buy": 25,
+        "hold": 12,
+        "sell": 0,
+        "strongSell": 2
+      }
+    ],
+    "maxAge": 86400
+  },
+  "summaryDetail": {
+    "maxAge": 1,
+    "priceHint": 2,
+    "previousClose": 235.06,
+    "open": 234.465,
+    "dayLow": 233.8101,
+    "dayHigh": 235.69,
+    "regularMarketPreviousClose": 235.06,
+    "regularMarketOpen": 234.465,
+    "regularMarketDayLow": 233.8101,
+    "regularMarketDayHigh": 235.69,
+    "dividendRate": 1,
+    "dividendYield": 0.0043,
+    "exDividendDate": "2024-11-08T00:00:00.000Z",
+    "payoutRatio": 0.1612,
+    "fiveYearAvgDividendYield": 0.63,
+    "beta": 1.24,
+    "trailingPE": 38.58128,
+    "forwardPE": 28.274368,
+    "volume": 17754007,
+    "regularMarketVolume": 17754007,
+    "averageVolume": 48990585,
+    "averageVolume10days": 47380790,
+    "averageDailyVolume10Day": 47380790,
+    "bid": 234.91,
+    "ask": 235.01,
+    "bidSize": 100,
+    "askSize": 100,
+    "marketCap": 3551608438784,
+    "fiftyTwoWeekLow": 164.08,
+    "fiftyTwoWeekHigh": 237.49,
+    "priceToSalesTrailing12Months": 9.082584,
+    "fiftyDayAverage": 228.4304,
+    "twoHundredDayAverage": 205.3111,
+    "trailingAnnualDividendRate": 0.98,
+    "trailingAnnualDividendYield": 0.0041691484,
+    "currency": "USD",
+    "fromCurrency": null,
+    "toCurrency": null,
+    "lastMarket": null,
+    "coinMarketCapLink": null,
+    "algorithm": null,
+    "tradeable": false
+  },
+  "cashflowStatementHistory": {
+    "cashflowStatements": [
+      {
+        "maxAge": 1,
+        "endDate": "2024-09-30T00:00:00.000Z",
+        "netIncome": 93736000000
+      },
+      {
+        "maxAge": 1,
+        "endDate": "2023-09-30T00:00:00.000Z",
+        "netIncome": 96995000000
+      },
+      {
+        "maxAge": 1,
+        "endDate": "2022-09-30T00:00:00.000Z",
+        "netIncome": 99803000000
+      },
+      {
+        "maxAge": 1,
+        "endDate": "2021-09-30T00:00:00.000Z",
+        "netIncome": 94680000000
+      }
+    ],
+    "maxAge": 86400
+  },
+  "earnings": {
+    "maxAge": 86400,
+    "earningsChart": {
+      "quarterly": [
+        {
+          "date": "4Q2023",
+          "actual": 2.18,
+          "estimate": 2.10534
+        },
+        {
+          "date": "1Q2024",
+          "actual": 1.53,
+          "estimate": 1.49923
+        },
+        {
+          "date": "2Q2024",
+          "actual": 1.4,
+          "estimate": 1.34086
+        },
+        {
+          "date": "3Q2024",
+          "actual": 0.97,
+          "estimate": 0.94654
+        }
+      ],
+      "currentQuarterEstimate": 2.35055,
+      "currentQuarterEstimateDate": "4Q",
+      "currentQuarterEstimateYear": 2024,
+      "earningsDate": [
+        "2025-01-30T21:00:00.000Z",
+        "2025-02-03T21:00:00.000Z"
+      ],
+      "isEarningsDateEstimate": true
+    },
+    "financialsChart": {
+      "yearly": [
+        {
+          "date": 2021,
+          "revenue": 365817000000,
+          "earnings": 94680000000
+        },
+        {
+          "date": 2022,
+          "revenue": 394328000000,
+          "earnings": 99803000000
+        },
+        {
+          "date": 2023,
+          "revenue": 383285000000,
+          "earnings": 96995000000
+        },
+        {
+          "date": 2024,
+          "revenue": 391035000000,
+          "earnings": 93736000000
+        }
+      ],
+      "quarterly": [
+        {
+          "date": "4Q2023",
+          "revenue": 119575000000,
+          "earnings": 33916000000
+        },
+        {
+          "date": "1Q2024",
+          "revenue": 90753000000,
+          "earnings": 23636000000
+        },
+        {
+          "date": "2Q2024",
+          "revenue": 85777000000,
+          "earnings": 21448000000
+        },
+        {
+          "date": "3Q2024",
+          "revenue": 94930000000,
+          "earnings": 14736000000
+        }
+      ]
+    },
+    "financialCurrency": "USD"
+  },
+  "calendarEvents": {
+    "maxAge": 1,
+    "earnings": {
+      "earningsDate": [
+        "2025-01-30T21:00:00.000Z",
+        "2025-02-03T21:00:00.000Z"
+      ],
+      "earningsCallDate": [
+        1730408400
+      ],
+      "isEarningsDateEstimate": true,
+      "earningsAverage": 2.35522,
+      "earningsLow": 2.19,
+      "earningsHigh": 2.5,
+      "revenueAverage": 124395630000,
+      "revenueLow": 119563000000,
+      "revenueHigh": 129887000000
+    },
+    "exDividendDate": "2024-11-08T00:00:00.000Z",
+    "dividendDate": "2024-11-14T00:00:00.000Z"
+  },
+  "defaultKeyStatistics": {
+    "maxAge": 1,
+    "priceHint": 2,
+    "enterpriseValue": 3607013359616,
+    "forwardPE": 28.282879,
+    "profitMargins": 0.23971,
+    "floatShares": 15091184209,
+    "sharesOutstanding": 15115799552,
+    "sharesShort": 141037864,
+    "sharesShortPriorMonth": "1974-06-20T00:20:53.000Z",
+    "sharesShortPreviousMonthDate": "2024-10-15T00:00:00.000Z",
+    "dateShortInterest": 1731628800,
+    "sharesPercentSharesOut": 0.0093,
+    "heldPercentInsiders": 0.02056,
+    "heldPercentInstitutions": 0.61915,
+    "shortRatio": 3.21,
+    "shortPercentOfFloat": 0.0093,
+    "beta": 1.24,
+    "impliedSharesOutstanding": 15332100096,
+    "category": null,
+    "bookValue": 3.767,
+    "priceToBook": 62.373245,
+    "fundFamily": null,
+    "legalType": null,
+    "lastFiscalYearEnd": "2024-09-28T00:00:00.000Z",
+    "nextFiscalYearEnd": "2025-09-28T00:00:00.000Z",
+    "mostRecentQuarter": "2024-09-28T00:00:00.000Z",
+    "earningsQuarterlyGrowth": -0.358,
+    "netIncomeToCommon": 93736001536,
+    "trailingEps": 6.09,
+    "forwardEps": 8.31,
+    "lastSplitFactor": "4:1",
+    "lastSplitDate": 1598832000,
+    "enterpriseToRevenue": 9.224,
+    "enterpriseToEbitda": 26.786,
+    "52WeekChange": 0.24127364,
+    "SandP52WeekChange": 0.3232665,
+    "lastDividendValue": 0.25,
+    "lastDividendDate": "2024-11-08T00:00:00.000Z"
+  },
+  "financialData": {
+    "maxAge": 86400,
+    "currentPrice": 234.96,
+    "targetHighPrice": 300,
+    "targetLowPrice": 184,
+    "targetMeanPrice": 244.47739,
+    "targetMedianPrice": 250,
+    "recommendationMean": 1.89362,
+    "recommendationKey": "buy",
+    "numberOfAnalystOpinions": 42,
+    "totalCash": 65171001344,
+    "totalCashPerShare": 4.311,
+    "ebitda": 134660997120,
+    "totalDebt": 119058997248,
+    "quickRatio": 0.745,
+    "currentRatio": 0.867,
+    "totalRevenue": 391034994688,
+    "debtToEquity": 209.059,
+    "revenuePerShare": 25.485,
+    "returnOnAssets": 0.21464,
+    "returnOnEquity": 1.5741299,
+    "freeCashflow": 110846001152,
+    "operatingCashflow": 118254002176,
+    "earningsGrowth": -0.341,
+    "revenueGrowth": 0.061,
+    "grossMargins": 0.46206,
+    "ebitdaMargins": 0.34437,
+    "operatingMargins": 0.31171,
+    "profitMargins": 0.23971,
+    "financialCurrency": "USD"
+  }
+}
