@@ -49,6 +49,30 @@ async function compareWithCompetitors_console(competitors) {
     const mostUndervaluedFcYield = Object.keys(fcYieldComparaison).reduce((a, b) => fcYieldComparaison[a] > fcYieldComparaison[b] ? a : b, '');
     const mostUndervaluedPs = Object.keys(psComparaison).reduce((a, b) => psComparaison[a] > psComparaison[b] ? a : b, '');
 
+    competitorsData.forEach(competitor => {
+       console.log("\n");
+       console.log(competitor.Symbol + " | PE:", competitor.TrailingPe);
+       console.log(competitor.Symbol + " | Ebitda: ", competitor.Ebitda);
+       console.log(competitor.Symbol + " | PEG: ", competitor.pegComparaison);
+       console.log(competitor.Symbol + " | RevenueGrowth: ", competitor.RevenueGrowth);
+       console.log(competitor.Symbol + " | DebtToEquity: ", competitor.DebtToEquity);
+       console.log(competitor.Symbol + " | ROI: ", competitor.Roi);
+       console.log(competitor.Symbol + " | FCYield: ", competitor.FcYield); 
+       console.log(competitor.Symbol + " | PriceToSales: ", competitor.PriceToSales); 
+    });
+
+    const JSONResult = {
+        'SOPERatio': mostUndervaluedPe,
+        'SOEvEbitdaRatio': mostUndervaluedEvEbitda,
+        'SOPegRatio': mostUndervaluedPeg,
+        'SOCroissanceRevenusRatio': mostUndervaluedRevenueGrowth,
+        'SOEndettementRatio': mostUndervaluedDebtToEquity,
+        'SORoiRatio': mostUndervaluedRoi,
+        'SOFluxTresorerieLibreRatio': mostUndervaluedFcYield,
+        'SOValorisationCAeRatio': mostUndervaluedPs,
+    };
+
+    console.log("\nHighScore : ", JSONResult);
 
     console.log(`\nSous-évaluée sur le P/E ratio est : ${mostUndervaluedPe}`);
     console.log(`Sous-évaluée sur le EV/EBITDA ratio est : ${mostUndervaluedEvEbitda}`);
@@ -59,7 +83,6 @@ async function compareWithCompetitors_console(competitors) {
     console.log(`Sous-évaluée sur le ratio de combien une entreprise génère de flux de trésorerie libre par rapport à sa valeur marchande est : ${mostUndervaluedFcYield}`);
     console.log(`Sous-évaluée sur le ratio de la valorisation de l'entreprise à son chiffre d'affaires est : ${mostUndervaluedPs}`);
 
-    
 }
 
 module.exports = compareWithCompetitors_console;

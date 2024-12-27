@@ -7,7 +7,9 @@ const yahooFinance = require('yahoo-finance2').default;
  */
 async function getFinancialData(symbol) {
     try {
-        const data = await yahooFinance.quoteSummary(symbol, { modules: ['summaryDetail', 'financialData', 'defaultKeyStatistics', 'calendarEvents', 'assetProfile', 'cashflowStatementHistory', 'recommendationTrend', 'earnings'] });
+        //const data = await yahooFinance.quoteSummary(symbol, { modules: ['summaryDetail', 'financialData', 'defaultKeyStatistics', 'calendarEvents', 'assetProfile', 'cashflowStatementHistory', 'recommendationTrend', 'earnings'] });
+
+        const data = require(`./../mockData/pharma/${symbol}.json`);
 
         const initialInvestment = 1000; // Montant fixe de l'investissement initial
 
