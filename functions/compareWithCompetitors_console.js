@@ -23,6 +23,7 @@ async function compareWithCompetitors_console(competitors) {
         }
     }
 
+    
     // Calcul des moyennes des concurrents
     let totalPe = 0, totalEvEbitda = 0, count = 1;
     competitorsData.forEach(company => {
@@ -32,8 +33,31 @@ async function compareWithCompetitors_console(competitors) {
         console.log(company.TrailingPe)
     });
     let moyenne = totalPe / count;
+    const marges = [];
     console.log("Moyenne: ", moyenne); 
-    competitorsData.forEach(company => console.log(`${company.Symbol}: `, (company.TrailingPe / moyenne) * 100));
+    competitorsData.forEach(company => {
+        let margePe = (company.TrailingPe - moyenne) / moyenne * 100
+        let margeEbitda = (company.Ebitda - moyenne) / moyenne * 100
+        let margePEG = (company.Ebitda - moyenne) / moyenne * 100
+        let margeRevenuGrowth = (company.Ebitda - moyenne) / moyenne * 100
+        let margeDebtToEquity = (company.margeDebtToEquity - moyenne) / moyenne * 100
+        let margeRoi = (company.Roi - moyenne) / moyenne * 100
+        let margeFcYield = (company.Roi - moyenne) / moyenne * 100
+        let margePS = (company.PsValie - moyenne) / moyenne * 100
+
+        marges.push({actualSymbol: { 
+            "Symbol": company.Symbol,
+            "PE": margePe, 
+            "EBITDA": margeEbitda, 
+            "PEG": margePEG,
+            "RevenuGrowth": margeRevenuGrowth,
+            "DebtToEquity": margeDebtToEquity,
+            "ROI": margeRoi,
+            "FcYield": margeFcYield,
+            "PS": margePS
+        }})
+    });
+    console.log("marges: ", marges)
 
     const peComparaison = comparePE(competitorsData);
     const evEbitdaComparaison = compareEV_EBITDA(competitorsData);
@@ -54,19 +78,7 @@ async function compareWithCompetitors_console(competitors) {
     const mostUndervaluedFcYield = Object.keys(fcYieldComparaison).reduce((a, b) => fcYieldComparaison[a] > fcYieldComparaison[b] ? a : b, '');
     const mostUndervaluedPs = Object.keys(psComparaison).reduce((a, b) => psComparaison[a] > psComparaison[b] ? a : b, '');
 
-    competitorsData.forEach(competitor => {
-       console.log("\n");
-       console.log(competitor.Symbol + " | PE:", competitor.TrailingPe);
-       console.log(competitor.Symbol + " | Ebitda: ", competitor.Ebitda);
-       console.log(competitor.Symbol + " | PEG: ", competitor.pegComparaison);
-       console.log(competitor.Symbol + " | RevenueGrowth: ", competitor.RevenueGrowth);
-       console.log(competitor.Symbol + " | DebtToEquity: ", competitor.DebtToEquity);
-       console.log(competitor.Symbol + " | ROI: ", competitor.Roi);
-       console.log(competitor.Symbol + " | FCYield: ", competitor.FcYield); 
-       console.log(competitor.Symbol + " | PriceToSales: ", competitor.PriceToSales); 
-    });
-
-    const JSONResult = {
+    const highScores = {
         'SOPERatio': mostUndervaluedPe,
         'SOEvEbitdaRatio': mostUndervaluedEvEbitda,
         'SOPegRatio': mostUndervaluedPeg,
@@ -77,16 +89,7 @@ async function compareWithCompetitors_console(competitors) {
         'SOValorisationCAeRatio': mostUndervaluedPs,
     };
 
-    console.log("\nHighScore : ", JSONResult);
-
-    console.log(`\nSous-évaluée sur le P/E ratio est : ${mostUndervaluedPe}`);
-    console.log(`Sous-évaluée sur le EV/EBITDA ratio est : ${mostUndervaluedEvEbitda}`);
-    console.log(`Sous-évaluée sur le PEG ratio est : ${mostUndervaluedPeg}`);
-    console.log(`Sous-évaluée sur la croissance de revenus est : ${mostUndervaluedRevenueGrowth}`);
-    console.log(`Sous-évaluée sur le ratio d'endettement est : ${mostUndervaluedDebtToEquity}`);
-    console.log(`Sous-évaluée sur le ratio de retour sur investissement est : ${mostUndervaluedRoi}`);
-    console.log(`Sous-évaluée sur le ratio de combien une entreprise génère de flux de trésorerie libre par rapport à sa valeur marchande est : ${mostUndervaluedFcYield}`);
-    console.log(`Sous-évaluée sur le ratio de la valorisation de l'entreprise à son chiffre d'affaires est : ${mostUndervaluedPs}`);
+    console.log("\nHighScore : ", highScores);
 
 }
 
