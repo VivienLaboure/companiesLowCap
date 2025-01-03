@@ -24,11 +24,16 @@ async function compareWithCompetitors_console(competitors) {
     }
 
     // Calcul des moyennes des concurrents
-    let totalPe = 0, totalEvEbitda = 0;
+    let totalPe = 0, totalEvEbitda = 0, count = 1;
     competitorsData.forEach(company => {
+        count++;
         totalPe += company.TrailingPe || 0;
         totalEvEbitda += (company.EntrepriseValue / company.Ebitda) || 0;
+        console.log(company.TrailingPe)
     });
+    let moyenne = totalPe / count;
+    console.log("Moyenne: ", moyenne); 
+    competitorsData.forEach(company => console.log(`${company.Symbol}: `, (company.TrailingPe / moyenne) * 100));
 
     const peComparaison = comparePE(competitorsData);
     const evEbitdaComparaison = compareEV_EBITDA(competitorsData);
