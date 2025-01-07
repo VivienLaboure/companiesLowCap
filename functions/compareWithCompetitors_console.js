@@ -25,37 +25,49 @@ async function compareWithCompetitors_console(competitors) {
 
     
     // Calcul des moyennes des concurrents
-    let totalPe = 0, totalEvEbitda = 0, count = 1;
+    let totalPe = 0, totalEbitda = 0, totalPegRatio = 0, totalRevenueGrowth = 0, totalDebtToEquity = 0, totalRoi = 0, totalFcYield = 0, totalPs = 0, count = 1;
     competitorsData.forEach(company => {
         count++;
         totalPe += company.TrailingPe || 0;
-        totalEvEbitda += (company.EntrepriseValue / company.Ebitda) || 0;
-        console.log(company.TrailingPe)
+        totalEbitda += company.Ebitda || 0;
+        totalPegRatio += company.PegRatio || 0;
+        totalRevenueGrowth += company.RevenueGrowth || 0;
+        totalDebtToEquity += company.DebtToEquity || 0;
+        totalRoi += company.Roi || 0;
+        totalFcYield += company.FCFYield || 0;
+        totalPs += company.PriceToSales || 0;
     });
-    let moyenne = totalPe / count;
+    let moyennePE = totalPe / count;
+    let moyenneEbitda = totalEbitda / count;
+    let moyennePegRatio = totalPegRatio / count;
+    let moyenneRevenueGrowth = totalRevenueGrowth / count;
+    let moyenneDebtToEquity = totalDebtToEquity / count;
+    let moyenneRoi = totalRoi / count;
+    let moyenneFcYield = totalFcYield / count;
+    let moyennePs = totalPs / count;
     const marges = [];
-    console.log("Moyenne: ", moyenne); 
+    console.log("Moyenne ebitda: ", moyennePegRatio); 
     competitorsData.forEach(company => {
-        let margePe = (company.TrailingPe - moyenne) / moyenne * 100
-        let margeEbitda = (company.Ebitda - moyenne) / moyenne * 100
-        let margePEG = (company.Ebitda - moyenne) / moyenne * 100
-        let margeRevenuGrowth = (company.Ebitda - moyenne) / moyenne * 100
-        let margeDebtToEquity = (company.margeDebtToEquity - moyenne) / moyenne * 100
-        let margeRoi = (company.Roi - moyenne) / moyenne * 100
-        let margeFcYield = (company.Roi - moyenne) / moyenne * 100
-        let margePS = (company.PsValie - moyenne) / moyenne * 100
+        let margePe = (company.TrailingPe - moyennePE) / moyennePE * 100;
+        let margeEbitda = (company.Ebitda - moyenneEbitda) / moyenneEbitda * 100;
+        let margePEG = (company.PegRatio - moyennePegRatio) / moyennePegRatio * 100;
+        let margeRevenueGrowth = (company.RevenueGrowth - moyenneRevenueGrowth) / moyenneRevenueGrowth * 100;
+        let margeDebtToEquity = (company.DebtToEquity - moyenneDebtToEquity) / moyenneDebtToEquity * 100;
+        let margeRoi = (company.Roi - moyenneRoi) / moyenneRoi * 100;
+        let margeFcYield = (company.FCFYield - moyenneFcYield) / moyenneFcYield * 100;
+        let margePS = (company.PriceToSales - moyennePs) / moyennePs * 100;
 
-        marges.push({actualSymbol: { 
+        marges.push({ 
             "Symbol": company.Symbol,
-            "PE": margePe, 
-            "EBITDA": margeEbitda, 
-            "PEG": margePEG,
-            "RevenuGrowth": margeRevenuGrowth,
-            "DebtToEquity": margeDebtToEquity,
-            "ROI": margeRoi,
-            "FcYield": margeFcYield,
-            "PS": margePS
-        }})
+            "Marge PE": `${Math.round(margePe)}%`, 
+            "Marge EBITDA": `${Math.round(margeEbitda)}%`, 
+            "Marge PEG": `${Math.round(margePEG)}%`,
+            "Marge RevenueGrowth": `${Math.round(margeRevenueGrowth)}%`,
+            "Marge DebtToEquity": `${Math.round(margeDebtToEquity)}%`,
+            "Marge ROI": `${Math.round(margeRoi)}%`,
+            "Marge FcYield": `${Math.round(margeFcYield)}%`,
+            "Marge PS": `${Math.round(margePS)}%`
+        });
     });
     console.log("marges: ", marges)
 
