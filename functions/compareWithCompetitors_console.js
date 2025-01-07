@@ -46,7 +46,6 @@ async function compareWithCompetitors_console(competitors) {
     let moyenneFcYield = totalFcYield / count;
     let moyennePs = totalPs / count;
     const marges = [];
-    console.log("Moyenne ebitda: ", moyennePegRatio); 
     competitorsData.forEach(company => {
         let margePe = (company.TrailingPe - moyennePE) / moyennePE * 100;
         let margeEbitda = (company.Ebitda - moyenneEbitda) / moyenneEbitda * 100;
