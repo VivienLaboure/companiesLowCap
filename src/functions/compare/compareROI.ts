@@ -1,11 +1,11 @@
-const calculateAverage = require("../calculateAverage");
+import {calculateAverage} from '../calculateAverage';
 
 /**
  * Compare le retour sur investissement.
  * @param {Array} companiesData - Données des entreprises.
  * @returns {number} La moyenne des valeurs valides pour cette propriété.
  */
-function compareROI(competitorsData) {
+export function compareROI(competitorsData:Array<any>): object {
     let sousEvaluationROI = {};
     const avgROI = calculateAverage(competitorsData, 'Roi');
 

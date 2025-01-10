@@ -3,7 +3,7 @@
  * @param {Array} competitorsData - Données des concurrents.
  * @returns {Object} Résultat de la sous-évaluation des entreprises sur l'EV/EBITDA.
  */
-function compareEV_EBITDA(competitorsData) {
+export function compareEV_EBITDA(competitorsData: Array<any>): object {
     let totalEvEbitda = 0;
 
     competitorsData.forEach(company => {
@@ -22,5 +22,3 @@ function compareEV_EBITDA(competitorsData) {
 
     return sousEvaluationEvEbitda;
 }
-
-module.exports = compareEV_EBITDA;

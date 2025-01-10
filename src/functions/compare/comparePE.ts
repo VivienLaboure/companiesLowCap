@@ -3,7 +3,7 @@
  * @param {Array} competitorsData - Données des concurrents.
  * @returns {Object} Résultat de la sous-évaluation des entreprises sur le P/E.
  */
-function comparePE(competitorsData: Array<any>): object {
+export function comparePE(competitorsData: Array<any>): object {
     let totalPe:number = 0;
 
     competitorsData.forEach(company => {
