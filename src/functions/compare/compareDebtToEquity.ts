@@ -1,5 +1,3 @@
-const calculateAverage = require("../calculateAverage");
-
 /**
  * Compare les bénéfices avant intérêts, impôts, dépréciation et amortissement.
  * @param {Array} companiesData - Données des entreprises.

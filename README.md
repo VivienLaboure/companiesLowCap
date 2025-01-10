@@ -11,7 +11,7 @@ npm install
 ```
 
 # Utilisation
-Le programme compare une entreprise principale à deux concurrents sur la base des ratios financiers suivants :
+Le programme compare des concurrents sur la base des ratios financiers suivants :
 
 P/E (Price-to-Earnings Ratio) : mesure la valorisation de l'entreprise par rapport à ses bénéfices.
 EV/EBITDA (Enterprise Value to EBITDA) : compare la valeur de l'entreprise à ses flux de trésorerie avant les intérêts, taxes, dépréciations et amortissements.

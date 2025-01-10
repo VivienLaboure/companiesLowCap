@@ -1,12 +1,10 @@
-const calculateAverage = require("../calculateAverage");
-
 /**
  * Compare les entreprises sur le ratio PEG
  * @param {Array} competitorsData - Données des concurrents.
  * @returns {Object} Résultat de la sous-évaluation des entreprises sur le PEG.
  */
-function comparePEG(competitorsData) {
-    let sousEvaluationPeg = {};
+function comparePEG(competitorsData: Array<any>): object {
+    let sousEvaluationPeg: object = {};
 
     // Calcul du PEG moyen des concurrents
     const avgPeg = calculateAverage(competitorsData, 'PegRatio');
@@ -20,7 +18,7 @@ function comparePEG(competitorsData) {
     // Comparer les concurrents
     competitorsData.forEach(company => {
         if (company.PegRatio != null && !isNaN(company.PegRatio)) {
-            const pegDiff = ((avgPeg - company.PegRatio) / avgPeg) * 100;
+            const pegDiff:number = ((avgPeg - company.PegRatio) / avgPeg) * 100;
             sousEvaluationPeg[company.Symbol] = pegDiff;
         } else {
             console.log(`PEG ratio invalide pour l'entreprise ${company.Symbol}`);
