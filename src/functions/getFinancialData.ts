@@ -5,7 +5,7 @@ const yahooFinance = require('yahoo-finance2').default;
  * @param {string} symbol - Le symbole boursier (par exemple, AAPL pour Apple).
  * @returns {Object} Données financières formatées de l'entreprise.
  */
-async function getFinancialData(symbol) {
+async function getFinancialData(symbol: string) {
     try {
         //const data = await yahooFinance.quoteSummary(symbol, { modules: ['summaryDetail', 'financialData', 'defaultKeyStatistics', 'calendarEvents', 'assetProfile', 'cashflowStatementHistory', 'recommendationTrend', 'earnings'] });
 
@@ -39,8 +39,8 @@ async function getFinancialData(symbol) {
 
         if (data && data.cashflowStatementHistory) {
             const cashFlows = data.cashflowStatementHistory.cashflowStatements;
-            let perPeriod = [];
-            cashFlows.forEach((statement, index) => {
+            let perPeriod:Array<string> = [];
+            cashFlows.forEach((statement: { maxAge: any; endDate: any; netIncome: any; }, index: string | number) => {
                 if (!perPeriod[index]) {
                     perPeriod[index] = [];
                 }

@@ -1,19 +1,9 @@
-const compareDebtToEquity = require("./compare/compareDebtToEquity");
-const compareEV_EBITDA = require("./compare/compareEV_EBITDA");
-const compareFCFYield = require("./compare/compareFCYIELD");
-const comparePE = require("./compare/comparePE");
-const comparePEG = require("./compare/comparePEG");
-const comparePS = require("./compare/comparePS");
-const compareRevenueGrowth = require("./compare/compareRevenueGrowth");
-const compareROI = require("./compare/compareROI");
-const getFinancialData = require("./getFinancialData");
-
 /**
  * Fonction pour comparer les ratios financiers des concurrents.
  * @param {string[]} competitors - Liste des symboles boursiers des concurrents.
  */
 async function compareWithCompetitors_console(competitors) {
-    let competitorsData = [];
+    let competitorsData:Array<any> = [];
     for (const competitor of competitors) {
         const competitorData = await getFinancialData(competitor);
         if (competitorData.DividendRate != 'N/A') {
@@ -45,7 +35,7 @@ async function compareWithCompetitors_console(competitors) {
     let moyenneRoi = totalRoi / count;
     let moyenneFcYield = totalFcYield / count;
     let moyennePs = totalPs / count;
-    const marges = [];
+    const marges:Array<object> = [];
     competitorsData.forEach(company => {
         let margePe = (company.TrailingPe - moyennePE) / moyennePE * 100;
         let margeEbitda = (company.Ebitda - moyenneEbitda) / moyenneEbitda * 100;
