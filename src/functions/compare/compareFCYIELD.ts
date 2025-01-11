@@ -1,10 +1,11 @@
+import { calculateAverage } from "../calculateAverage";
 /**
  * Compare les entreprises sur le ratio de combien une entreprise génère de flux de trésorerie libre par rapport à sa valeur marchande.
  * @param {Array} competitorsData - Données des concurrents.
  * @returns {Object} Résultat de la sous-évaluation des entreprises sur l'EV/EBITDA.
  */
-function compareFCFYield(competitorsData: Array<any>): object {
-    let sousEvaluationFCFYield = {};
+export function compareFCFYield(competitorsData: Array<any>): object {
+    let sousEvaluationFCFYield:Array<any> = [];
     const avgFCFYield:number = calculateAverage(competitorsData, 'FCFYield');
     
     competitorsData.forEach(company => {
@@ -14,5 +15,3 @@ function compareFCFYield(competitorsData: Array<any>): object {
 
     return sousEvaluationFCFYield;
 }
-
-module.exports = compareFCFYield;

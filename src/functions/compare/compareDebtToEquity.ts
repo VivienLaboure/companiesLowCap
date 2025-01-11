@@ -1,10 +1,11 @@
+import { calculateAverage } from "../calculateAverage";
 /**
  * Compare les bénéfices avant intérêts, impôts, dépréciation et amortissement.
  * @param {Array} companiesData - Données des entreprises.
  * @returns {number} La moyenne des valeurs valides pour cette propriété.
  */
-function compareDebtToEquity(competitorsData) {
-    let sousEvaluationDebtToEquity = {};
+export function compareDebtToEquity(competitorsData: any[]) {
+    let sousEvaluationDebtToEquity:Array<any> = [];
     const avgDebtToEquity = calculateAverage(competitorsData, 'DebtToEquity');
 
     competitorsData.forEach(company => {
@@ -14,5 +15,3 @@ function compareDebtToEquity(competitorsData) {
 
     return sousEvaluationDebtToEquity;
 }
-
-module.exports = compareDebtToEquity;

@@ -4,7 +4,7 @@
  * @param {string} key - La propriété pour laquelle la moyenne doit être calculée (ex: 'DebtToEquity').
  * @returns {number} La moyenne des valeurs valides pour cette propriété.
  */
-function calculateAverage(companiesData: Array<any>, key:string): number {
+export function calculateAverage(companiesData: Array<any>, key:string): number {
     // Filtrer les entreprises qui ont une valeur valide pour la propriété donnée (non nulle et numérique)
     const validCompanies = companiesData.filter(company => company[key] != null && !isNaN(company[key]));
 
@@ -20,5 +20,3 @@ function calculateAverage(companiesData: Array<any>, key:string): number {
     // Retourner la moyenne
     return total / validCompanies.length;
 }
-
-module.exports = calculateAverage;

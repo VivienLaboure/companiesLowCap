@@ -1,10 +1,11 @@
+import { calculateAverage } from "../calculateAverage";
 /**
  * Compare les entreprises sur le ratio PEG
  * @param {Array} competitorsData - Données des concurrents.
  * @returns {Object} Résultat de la sous-évaluation des entreprises sur le PEG.
  */
-function comparePEG(competitorsData: Array<any>): object {
-    let sousEvaluationPeg: object = {};
+export function comparePEG(competitorsData: Array<any>): object {
+    let sousEvaluationPeg:Array<any>= [];
 
     // Calcul du PEG moyen des concurrents
     const avgPeg = calculateAverage(competitorsData, 'PegRatio');
@@ -27,5 +28,3 @@ function comparePEG(competitorsData: Array<any>): object {
 
     return sousEvaluationPeg;
 }
-
-module.exports = comparePEG;

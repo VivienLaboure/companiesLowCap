@@ -3,7 +3,7 @@
  * @param {Array} competitorsData - Données des concurrents.
  * @returns {Object} Résultat de la sous-évaluation des entreprises sur l'EV/EBITDA.
  */
-function compareEV_EBITDA(competitorsData) {
+export function compareEV_EBITDA(competitorsData: any[]) {
     let totalEvEbitda = 0;
 
     competitorsData.forEach(company => {
@@ -13,7 +13,7 @@ function compareEV_EBITDA(competitorsData) {
     const avgEvEbitda = totalEvEbitda / competitorsData.length;
 
     // Calcul de la sous-évaluation sur l'EV/EBITDA
-    let sousEvaluationEvEbitda = {};
+    let sousEvaluationEvEbitda:Array<any> = [];
 
     competitorsData.forEach(company => {
         const evEbitdaDiff = ((avgEvEbitda - (company.EntrepriseValue / company.Ebitda)) / avgEvEbitda) * 100;
@@ -22,5 +22,3 @@ function compareEV_EBITDA(competitorsData) {
 
     return sousEvaluationEvEbitda;
 }
-
-module.exports = compareEV_EBITDA;

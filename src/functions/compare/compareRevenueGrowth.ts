@@ -1,12 +1,11 @@
-const calculateAverage = require("../calculateAverage");
-
+import { calculateAverage } from "../calculateAverage";
 /**
  * Compare les entreprises sur la croissance de revenus
  * @param {Array} competitorsData - Données des concurrents.
  * @returns {Object} Résultat de la sous-évaluation des entreprises sur la croissance de revenus.
  */
-function compareRevenueGrowth(competitorsData) {
-    let sousEvaluationRevenueGrowth = {};
+export function compareRevenueGrowth(competitorsData: any[]) {
+    let sousEvaluationRevenueGrowth:Array<any> = [];
 
     const avgRevGrowth = calculateAverage(competitorsData, 'RevenueGrowth');
 
@@ -18,5 +17,3 @@ function compareRevenueGrowth(competitorsData) {
 
     return sousEvaluationRevenueGrowth;
 }
-
-module.exports = compareRevenueGrowth;

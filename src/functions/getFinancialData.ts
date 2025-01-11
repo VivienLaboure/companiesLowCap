@@ -39,8 +39,8 @@ async function getFinancialData(symbol: string) {
 
         if (data && data.cashflowStatementHistory) {
             const cashFlows = data.cashflowStatementHistory.cashflowStatements;
-            let perPeriod:Array<string> = [];
-            cashFlows.forEach((statement: { maxAge: any; endDate: any; netIncome: any; }, index: string | number) => {
+            let perPeriod:Array<number> = [];
+            cashFlows.forEach((statement: { maxAge: any; endDate: any; netIncome: any; }, index: number) => {
                 if (!perPeriod[index]) {
                     perPeriod[index] = [];
                 }

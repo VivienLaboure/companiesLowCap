@@ -1,12 +1,20 @@
+import { compareDebtToEquity } from "./compare/compareDebtToEquity";
+import { compareEV_EBITDA } from "./compare/compareEV_EBITDA";
+import { compareFCFYield } from "./compare/compareFCYIELD";
+import { comparePE } from "./compare/comparePE";
+import { comparePEG } from "./compare/comparePEG";
+import { comparePS } from "./compare/comparePS";
+import { compareROI } from "./compare/compareROI";
+import { compareRevenueGrowth } from "./compare/compareRevenueGrowth";
 /**
  * Fonction pour comparer les ratios financiers des concurrents.
  * @param {string[]} competitors - Liste des symboles boursiers des concurrents.
  */
-async function compareWithCompetitors_console(competitors) {
+export async function compareWithCompetitors_console(competitors: string[]) {
     let competitorsData:Array<any> = [];
     for (const competitor of competitors) {
         const competitorData = await getFinancialData(competitor);
-        if (competitorData.DividendRate != 'N/A') {
+        if (competitorData && competitorData.DividendRate != 'N/A') {
             competitorsData.push(competitorData);
         } else {
             console.log("Dividendes inconnues pour ", competitor);
@@ -93,5 +101,3 @@ async function compareWithCompetitors_console(competitors) {
     console.log("\nHighScore : ", highScores);
 
 }
-
-module.exports = compareWithCompetitors_console;

@@ -1,10 +1,12 @@
+import { calculateAverage } from "../calculateAverage";
+
 /**
  * Compare la valorisation de l'entreprise à son chiffre d'affaires.
  * @param {Array} companiesData - Données des entreprises.
  * @returns {number} La moyenne des valeurs valides pour cette propriété.
  */
-function comparePS(competitorsData: Array<any>) {
-    let sousEvaluationPSRatio:object = {};
+export function comparePS(competitorsData: Array<any>) {
+    let sousEvaluationPSRatio:Array<any> = [];
     const avgPSRatio = calculateAverage(competitorsData, 'PriceToSales');
     
     competitorsData.forEach(company => {
@@ -14,5 +16,3 @@ function comparePS(competitorsData: Array<any>) {
 
     return sousEvaluationPSRatio;
 }
-
-module.exports = comparePS;
