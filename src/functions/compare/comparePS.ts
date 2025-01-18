@@ -5,8 +5,8 @@ import { calculateAverage } from "../calculateAverage";
  * @param {Array} companiesData - Données des entreprises.
  * @returns {number} La moyenne des valeurs valides pour cette propriété.
  */
-export function comparePS(competitorsData: Array<any>) {
-    let sousEvaluationPSRatio:Array<any> = [];
+export function comparePS(competitorsData: Array<any>): Record<string, number> {
+    let sousEvaluationPSRatio: Record<string, number> = {};
     const avgPSRatio = calculateAverage(competitorsData, 'PriceToSales');
     
     competitorsData.forEach(company => {

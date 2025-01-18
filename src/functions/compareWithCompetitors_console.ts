@@ -6,14 +6,15 @@ import { comparePEG } from "./compare/comparePEG";
 import { comparePS } from "./compare/comparePS";
 import { compareROI } from "./compare/compareROI";
 import { compareRevenueGrowth } from "./compare/compareRevenueGrowth";
+import { getFinancialData } from "./getFinancialData";
 /**
  * Fonction pour comparer les ratios financiers des concurrents.
  * @param {string[]} competitors - Liste des symboles boursiers des concurrents.
  */
-export async function compareWithCompetitors_console(competitors: string[]) {
-    let competitorsData:Array<any> = [];
+export async function compareWithCompetitors_console(competitors: string[], mockData: boolean): Promise<void> {
+    let competitorsData: Array<any> = [];
     for (const competitor of competitors) {
-        const competitorData = await getFinancialData(competitor);
+        const competitorData = await getFinancialData(competitor, mockData);
         if (competitorData && competitorData.DividendRate != 'N/A') {
             competitorsData.push(competitorData);
         } else {
@@ -21,7 +22,6 @@ export async function compareWithCompetitors_console(competitors: string[]) {
         }
     }
 
-    
     // Calcul des moyennes des concurrents
     let totalPe = 0, totalEbitda = 0, totalPegRatio = 0, totalRevenueGrowth = 0, totalDebtToEquity = 0, totalRoi = 0, totalFcYield = 0, totalPs = 0, count = 1;
     competitorsData.forEach(company => {
@@ -43,7 +43,7 @@ export async function compareWithCompetitors_console(competitors: string[]) {
     let moyenneRoi = totalRoi / count;
     let moyenneFcYield = totalFcYield / count;
     let moyennePs = totalPs / count;
-    const marges:Array<object> = [];
+    const marges: Array<object> = [];
     competitorsData.forEach(company => {
         let margePe = (company.TrailingPe - moyennePE) / moyennePE * 100;
         let margeEbitda = (company.Ebitda - moyenneEbitda) / moyenneEbitda * 100;
@@ -54,10 +54,10 @@ export async function compareWithCompetitors_console(competitors: string[]) {
         let margeFcYield = (company.FCFYield - moyenneFcYield) / moyenneFcYield * 100;
         let margePS = (company.PriceToSales - moyennePs) / moyennePs * 100;
 
-        marges.push({ 
+        marges.push({
             "Symbol": company.Symbol,
-            "Marge PE": `${Math.round(margePe)}%`, 
-            "Marge EBITDA": `${Math.round(margeEbitda)}%`, 
+            "Marge PE": `${Math.round(margePe)}%`,
+            "Marge EBITDA": `${Math.round(margeEbitda)}%`,
             "Marge PEG": `${Math.round(margePEG)}%`,
             "Marge RevenueGrowth": `${Math.round(margeRevenueGrowth)}%`,
             "Marge DebtToEquity": `${Math.round(margeDebtToEquity)}%`,
@@ -99,5 +99,4 @@ export async function compareWithCompetitors_console(competitors: string[]) {
     };
 
     console.log("\nHighScore : ", highScores);
-
 }

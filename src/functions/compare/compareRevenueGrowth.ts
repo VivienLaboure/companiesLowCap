@@ -4,8 +4,8 @@ import { calculateAverage } from "../calculateAverage";
  * @param {Array} competitorsData - Données des concurrents.
  * @returns {Object} Résultat de la sous-évaluation des entreprises sur la croissance de revenus.
  */
-export function compareRevenueGrowth(competitorsData: any[]) {
-    let sousEvaluationRevenueGrowth:Array<any> = [];
+export function compareRevenueGrowth(competitorsData: any[]): Record<string, number> {
+    let sousEvaluationRevenueGrowth: Record<string, number> = {};
 
     const avgRevGrowth = calculateAverage(competitorsData, 'RevenueGrowth');
 

@@ -1,18 +1,23 @@
-const yahooFinance = require('yahoo-finance2').default;
+import yahooFinance from 'yahoo-finance2';
+require('dotenv').config();
 
 /**
  * Fonction pour obtenir les données financières d'une entreprise.
  * @param {string} symbol - Le symbole boursier (par exemple, AAPL pour Apple).
  * @returns {Object} Données financières formatées de l'entreprise.
  */
-async function getFinancialData(symbol: string) {
+export async function getFinancialData(symbol: string, mockData: boolean): Promise<any> {
     try {
-        //const data = await yahooFinance.quoteSummary(symbol, { modules: ['summaryDetail', 'financialData', 'defaultKeyStatistics', 'calendarEvents', 'assetProfile', 'cashflowStatementHistory', 'recommendationTrend', 'earnings'] });
-
-        const data = require(`./../mockData/pharma/${symbol}.json`);
+        let data;
+        if (mockData) {
+            console.log('Récupération des données en direct depuis Yahoo Finance.');
+            data = await yahooFinance.quoteSummary(symbol, { modules: ['summaryDetail', 'financialData', 'defaultKeyStatistics', 'calendarEvents', 'assetProfile', 'cashflowStatementHistory', 'recommendationTrend', 'earnings'] });
+        } else {
+            console.log('Utilisation des données de simulation.');
+            data = require(`./../../mockData/pharma/${symbol}.json`);
+        }
 
         const initialInvestment = 1000; // Montant fixe de l'investissement initial
-
         const freeCashFlow = data.financialData.freeCashflow;
         const marketCap = data.summaryDetail.marketCap;
         const totalDebt = data.financialData.totalDebt;
@@ -20,7 +25,25 @@ async function getFinancialData(symbol: string) {
         const roi = ((marketCap - initialInvestment) / initialInvestment) * 100;
         const fcfYield = marketCap ? (freeCashFlow / marketCap) * 100 : null;
 
-        let dataCompany = {
+        let dataCompany: {
+            Symbol: string;
+            TrailingPe: any;
+            PegRatio: any;
+            DividendRate: any;
+            DividendYield: any;
+            PriceToSales: any;
+            FCFYield: number | null;
+            Ebitda: any;
+            RevenueGrowth: any;
+            TargetMeanPrice: any;
+            DebtToEquity: any;
+            Roi: number;
+            earnings: any;
+            recommendationTrend: any;
+            AnalyseCashFlow?: any;
+            CashFlow?: Array<Array<number>>;
+            EntrepriseValue?: number;
+        } = {
             Symbol: symbol,
             TrailingPe: data.summaryDetail.trailingPE,
             PegRatio: data.defaultKeyStatistics.pegRatio,
@@ -39,7 +62,7 @@ async function getFinancialData(symbol: string) {
 
         if (data && data.cashflowStatementHistory) {
             const cashFlows = data.cashflowStatementHistory.cashflowStatements;
-            let perPeriod:Array<number> = [];
+            let perPeriod: Array<Array<number>> = [];
             cashFlows.forEach((statement: { maxAge: any; endDate: any; netIncome: any; }, index: number) => {
                 if (!perPeriod[index]) {
                     perPeriod[index] = [];
@@ -66,7 +89,6 @@ async function getFinancialData(symbol: string) {
         return dataCompany;
     } catch (error) {
         console.error('Erreur lors de la récupération des données:', error);
+        return null;
     }
 }
-
-module.exports = getFinancialData;

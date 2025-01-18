@@ -2,11 +2,11 @@ import { calculateAverage } from "../calculateAverage";
 
 /**
  * Compare le retour sur investissement.
- * @param {Array} companiesData - Données des entreprises.
+ * @param {Array} competitorsData - Données des entreprises.
  * @returns {number} La moyenne des valeurs valides pour cette propriété.
  */
-export function compareROI(competitorsData: any[]) {
-    let sousEvaluationROI:Array<any> = [];
+export function compareROI(competitorsData: any[]): Record<string, number> {
+    let sousEvaluationROI: Record<string, number> = {};
     const avgROI = calculateAverage(competitorsData, 'Roi');
 
     competitorsData.forEach(company => {
@@ -16,5 +16,3 @@ export function compareROI(competitorsData: any[]) {
 
     return sousEvaluationROI;
 }
-
-module.exports = compareROI;

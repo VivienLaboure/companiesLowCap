@@ -4,8 +4,8 @@ import { calculateAverage } from "../calculateAverage";
  * @param {Array} companiesData - Données des entreprises.
  * @returns {number} La moyenne des valeurs valides pour cette propriété.
  */
-export function compareDebtToEquity(competitorsData: any[]) {
-    let sousEvaluationDebtToEquity:Array<any> = [];
+export function compareDebtToEquity(competitorsData: any[]): Record<string, number> {
+    let sousEvaluationDebtToEquity: Record<string, number> = {};
     const avgDebtToEquity = calculateAverage(competitorsData, 'DebtToEquity');
 
     competitorsData.forEach(company => {

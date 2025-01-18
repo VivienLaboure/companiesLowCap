@@ -3,8 +3,8 @@
  * @param {Array} competitorsData - Données des concurrents.
  * @returns {Object} Résultat de la sous-évaluation des entreprises sur le P/E.
  */
-export function comparePE(competitorsData: Array<any>):number {
-    let totalPe:number = 0;
+export function comparePE(competitorsData: Array<any>): Record<string, number> {
+    let totalPe: number = 0;
 
     competitorsData.forEach(company => {
         totalPe += company.TrailingPe || 0;
@@ -13,11 +13,13 @@ export function comparePE(competitorsData: Array<any>):number {
     const avgPe = totalPe / competitorsData.length;
 
     // Calcul de la sous-évaluation sur le P/E
-    let sousEvaluationPe:Array<string> = [];
+    const sousEvaluationPe: Record<string, number> = {};
 
     competitorsData.forEach(company => {
-        const peDiff:number = ((avgPe - company.TrailingPe) / avgPe) * 100;
-        sousEvaluationPe[company.Symbol] = peDiff;
+        if (typeof company.TrailingPe === "number" && company.Symbol) {
+            const peDiff: number = ((avgPe - company.TrailingPe) / avgPe) * 100;
+            sousEvaluationPe[company.Symbol] = peDiff;
+        }
     });
 
     return sousEvaluationPe;

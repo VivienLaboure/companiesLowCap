@@ -4,8 +4,8 @@ import { calculateAverage } from "../calculateAverage";
  * @param {Array} competitorsData - Données des concurrents.
  * @returns {Object} Résultat de la sous-évaluation des entreprises sur l'EV/EBITDA.
  */
-export function compareFCFYield(competitorsData: Array<any>): object {
-    let sousEvaluationFCFYield:Array<any> = [];
+export function compareFCFYield(competitorsData: Array<any>): Record<string, number> {
+    let sousEvaluationFCFYield: Record<string, number> = {};
     const avgFCFYield:number = calculateAverage(competitorsData, 'FCFYield');
     
     competitorsData.forEach(company => {
